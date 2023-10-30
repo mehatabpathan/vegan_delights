@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['vegan-delights.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['vegan-delights-d7e8edb51d3f.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
