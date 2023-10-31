@@ -23,6 +23,8 @@ dj3-cloudinary-storage==0.0.6
 Django==3.2.22
 django-allauth==0.57.0
 django-crispy-forms==1.14.0
+django-extensions==3.2.3
+django-storages==1.14.2
 django-summernote==0.8.20.0
 exceptiongroup==1.0.0rc9
 executing==1.2.0
