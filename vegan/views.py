@@ -38,6 +38,10 @@ class RecipeDetail(View):
         queryset = Recipe.objects.all()
         recipe = get_object_or_404(queryset, slug=slug)
         comments = recipe.comments.order_by('created_on')
+        liked = False
+        if recipe.likes.filter(id=self.request.user.id).exists():
+            liked = True
+
         bookmarked = False
         if recipe.bookmarks.filter(id=self.request.user.id).exists():
             bookmarked = True
@@ -49,6 +53,7 @@ class RecipeDetail(View):
                 "recipe": recipe,
                 "comments": comments,
                 "comment_form": CommentForm(),
+                "liked": liked,
                 "mealplan_form": MealPlanForm(),
                 "bookmarked": bookmarked
             },
@@ -62,6 +67,9 @@ class RecipeDetail(View):
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
         comments = recipe.comments.order_by('created_on')
+        liked = False
+        if recipe.likes.filter(id=self.request.user.id).exists():
+            liked = True
         bookmarked = False
         if recipe.bookmarks.filter(id=self.request.user.id).exists():
             bookmarked = True
@@ -109,6 +117,7 @@ class RecipeDetail(View):
                 "recipe": recipe,
                 "comments": comments,
                 "comment_form": CommentForm(),
+                "liked": liked,
                 "mealplan_form": MealPlanForm(),
                 "bookmarked": bookmarked
             },

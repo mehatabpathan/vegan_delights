@@ -34,6 +34,8 @@ class Recipe(models.Model):
     ingredients = models.TextField(validators=[textfield_not_empty])
     method = models.TextField(validators=[textfield_not_empty])
     image = CloudinaryField('image', default='placeholder')
+    likes = models.ManyToManyField(
+        User, related_name='likes', default=None, blank=True)
     status = models.IntegerField(choices=STATUS, default=1)
     bookmarks = models.ManyToManyField(
         User, related_name='bookmark', default=None, blank=True)
