@@ -1,6 +1,6 @@
 """Views"""
 
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
@@ -221,6 +221,42 @@ class DeleteRecipe(
         """
         messages.success(self.request, self.success_message)
         return super(DeleteRecipe, self).delete(request, *args, **kwargs)
+
+class LikeRecipe(LoginRequiredMixin, View):
+    """
+    This view allows a logged in user to bookmark recipes.
+    """
+
+    def post(self, request, slug, *args, **kwargs):
+        """
+        Checks if user id already exists in the favourites
+        field in the Recipe database.
+        If they exist then remove them from the database.
+        If they don't exist then add them to the database.
+        """
+        recipe = get_object_or_404(Recipe, slug=slug)
+        if recipe.likes.filter(id=request.user.id).exists():
+            recipe.likes.remove(request.user)
+            messages.success(self.request, 'Recipe removed from likes')
+        else:
+            recipe.likes.add(request.user)
+            messages.success(self.request, 'Recipe added to likes')
+        return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
+
+
+class MyLikes(LoginRequiredMixin, generic.ListView):
+    """
+    This view allows a logged in user to view their liked recipes.
+    """
+    model = Recipe
+    template_name = 'my_likes.html'
+    paginate_by = 8
+
+    def get_queryset(self):
+        """
+        Override get_queryset to filter by user likes
+        """
+        return Recipe.objects.filter(likes=self.request.user.id)        
 
 
 class BookmarkRecipe(LoginRequiredMixin, View):
