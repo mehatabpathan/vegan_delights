@@ -68,7 +68,21 @@
                             {% endif %}
                             <!--End of Meal Plan Modal -->
                             {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'bookmark_recipe' recipe.slug %}" method="POST">
+                            <form class="d-inline" action="{% url 'like_recipe' recipe.slug %}" method="POST">
+                                {% csrf_token %}
+                                {% if liked %}
+                                <button class="action-btn btn btn-info" type="submit" name="like_id"
+                                    value="{{recipe.slug}}" aria-label="heart-outline">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                {% else %}
+                                <button class="action-btn btn btn-info" type="submit" name="like_id"
+                                    value="{{recipe.slug}}" aria-label="heart-solid">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                {% endif %}
+                            </form>
+                            <!-- <form class="d-inline" action="{% url 'bookmark_recipe' recipe.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if bookmarked  %}
                                 <button class="action-btn btn btn-info" type="submit" name="bookmark_id"
@@ -79,7 +93,7 @@
                                     value="{{recipe.slug}}" aria-label="bookmark-solid"><i
                                         class="far fa-bookmark"></i></button>
                                 {% endif %}
-                            </form>
+                            </form> -->
                             {% endif %}
                             {% if user.is_authenticated and recipe.author == user %}
                             <span>
