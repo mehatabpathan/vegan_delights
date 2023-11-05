@@ -7,22 +7,23 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    background-color: #fff;
+    /* background-color: rgb(252, 247, 242); */
 }
 
 .content {
     min-height: calc(100vh - 90px);
 }
 
-.page-title {
-    padding-top: 5px;
-    color: #212018;
+.pink-text {
+    color: #886363;
     font-weight: 300;
-    text-align: center;
 }
 
-.margin-top {
-    margin-top: 10px;
+.page-title {
+    padding-top: 5px;
+    color: #886363;
+    font-weight: 300;
+    text-align: center;
 }
 
 /* Nav */
@@ -39,11 +40,11 @@ body {
 }
 
 .navbar a:hover {
-    color: #212018;
+    color: #886363;
 }
 
 .logo-image {
-    height: 80px;
+    height: 100px;
 }
 
 .profile-icon {
@@ -53,7 +54,7 @@ body {
 /* Home Page */
 
 .hero-text-outer {
-    background-color: #d8f4d9;
+    background-color: #F4DDD8;
     min-height: 200px;
 }
 
@@ -68,20 +69,15 @@ body {
     margin: auto !important;
 }
 
-.slogan {
-    color: #212018;
-    font-weight: 300;
-}
-
 .feature-image {
     text-align: center;
-    color: #212018;
+    color: #080707;
 }
 
 .feature-title {
     font-family: 'Playfair Display', serif;
     font-size: 30px;
-    color: #212018;
+    color: #0a0909;
     padding-top: 10px;
     text-align: center;
 }
@@ -93,7 +89,7 @@ body {
 
 /* Recipe Cards */
 
-.recipe-card:hover {
+.recipe-card:hover, .mealplan-card:hover {
     box-shadow: 0px 0px 4px #D8B646 !important;
 }
 
@@ -106,15 +102,19 @@ body {
 
 .card-detail {
     border: none;
-    color: #212018;
+    color: #886363;
 }
 
 .recipe-detail-title {
     font-size: 20px;
 }
 
-.recipe-detail-title:first-letter {
+.recipe-detail-title:first-letter{
     text-transform: capitalize
+}
+
+.draft {
+    color: red;
 }
 
 /* Recipe Detail Page */
@@ -131,13 +131,12 @@ body {
     max-height: 300px;
     object-fit: cover;
     width: 100%;
-    height: 100%;
 }
 
 .recipe-detail-header {
     border: none;
-    background-color: #d8f4d9;
-    color: #212018;
+    background-color: rgb(252, 247, 242);
+    color: #886363;
 }
 
 .action-buttons-outer {
@@ -156,9 +155,7 @@ body {
 
 /* Add Recipe */
 
-.add-recipe input,
-.add-recipe textarea,
-.add-recipe select {
+.add-recipe input, .add-recipe textarea, .add-recipe select {
     border: 1px solid #D8B646;
 }
 
@@ -167,12 +164,12 @@ body {
 }
 
 .add-recipe label {
-    color: #212018;
+    color: #886363;
     font-weight: bold;
-}
+} 
 
 .clearablefileinput {
-    color: #212018;
+    color: #886363;
     border: none
 }
 
@@ -180,26 +177,47 @@ body {
     color: black !important;
 }
 
+/* meal plan page */
+
+.mealplan-card .card-img-top {
+    border-bottom: 1px solid #D8B646;
+}
+
+.mp-icon {
+    text-align: center;
+    color: #F4DDD8;
+    padding-top: 60px;
+}
+
+.mealplan-card-header {
+    background-color: #F4DDD8;
+    border-bottom: 1px solid #D8B646;
+}
+
+.mealplan-title {
+    text-align: center;
+    color: #442E10;
+    font-weight: 300;
+    font-size: 30px;
+}
+
 /* All auth templates */
 
-.signup,
-.login {
+.signup, .login {
     text-align: center;
     padding: 20px 0;
     border-radius: 2%;
     border: 1px solid #D8B646;
 }
 
-.signup input,
-.login input {
+.signup input, .login input {
     width: 90%;
     border: 1px solid #D8B646;
     padding: 5px;
     margin: 5px 0 10px 0;
-}
+} 
 
-.signup label,
-.login label {
+.signup label, .login label {
     display: block;
     text-align: center;
     color: #442E10;
@@ -249,7 +267,7 @@ body {
     .hero-text {
         font-size: 35px;
     }
-
+  
     .logo-image {
         height: 75px;
     }
@@ -261,7 +279,7 @@ body {
     .landing-tagline {
         width: 100%;
     }
-
+    
     .logo-image {
         height: 70px;
     }
@@ -272,11 +290,10 @@ body {
     }
 
     .card-detail {
-        width: 300px;
+       width: 300px;
     }
 
-    .mp-button,
-    .action-btn {
+    .mp-button, .action-btn {
         font-size: .75rem;
     }
 }
