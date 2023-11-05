@@ -11,6 +11,7 @@ body {
 }
 
 .content {
+    background-image: url(../images/bgimage.jpeg);
     min-height: calc(100vh - 90px);
 }
 
