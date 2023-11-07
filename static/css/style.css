@@ -11,9 +11,9 @@ body {
 }
 
 .content {
-    background-image: url(../images/bgimage.jpeg);
+    /* background-image: url(../images/bgimage.jpeg); 
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5); */
     min-height: calc(100vh - 90px);
 }
 
@@ -36,18 +36,18 @@ body {
 }
 
 .navbar ul a {
-    color: #442E10;
+    color: #09120b;
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
 }
 
 .navbar a:hover {
-    color: #886363;
+    color: #060c06;
 }
 
 .logo-image {
-    height: 100px;
+    height: 100px; 
 }
 
 .profile-icon {
@@ -57,8 +57,13 @@ body {
 /* Home Page */
 
 .hero-text-outer {
-    background-color: #F4DDD8;
-    min-height: 200px;
+    background-image: url(../images/bgimage.jpeg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    min-height: 50vh; /* 100% of the viewport height */
+    min-width: 100vw; /* 100% of the viewport width */
 }
 
 .hero-text {
