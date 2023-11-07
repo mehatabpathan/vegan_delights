@@ -7,6 +7,7 @@ from django_extensions.db.fields import AutoSlugField
 from cloudinary.models import CloudinaryField
 from .validators import textfield_not_empty
 
+
 STATUS = ((0, "Save for later"), (1, "Publish Now"))
 
 class Category(models.Model):
@@ -76,7 +77,7 @@ class MealPlanItem(models.Model):
 
     def __str__(self):
         return f"Meal Plan for {self.day} by {self.user}"
-
+    
 
 class Comment(models.Model):
     """Model for Comment"""
