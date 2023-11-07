@@ -3,13 +3,13 @@
 {% block content %}
 
 <!-- Call to action section -->
-<section>
+<!-- <section>
     <div class="container px-2 py-3">
-          <!-- <div class="row flex-md-row-reverse py-3 m-0">
+           <div class="row flex-md-row-reverse py-3 m-0">
              <div class="col-md-7 col-lg-5 p-0 pl-md-5 align-self-center">
                 <img src="https://res.cloudinary.com/aliokeeffe/image/upload/v1658744116/family_dinner_cmsqxz.webp"
                     class="img-fluid family-image" alt="family_dinner">
-            </div>  -->
+            </div>  
             {% if user.is_authenticated %} 
             <div class="col-md-5 col-lg-7 hero-text-outer text-center">
                 <h1 class="mt-4 mb-2 hero-text">Welcome back to Vegan Delights</h1>
@@ -31,6 +31,44 @@
         </div>
     </div>
 </section>
+
+{% block content %} -->
+
+<!-- Search bar section -->
+<section class="container mt-5 mb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search for recipes..." aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Food sections -->
+<section class="container my-5">
+    <div class="row">
+        <!-- Food section 1 -->
+        <div class="col-md-4">
+            <h2 class="section-title">Breakfast Recipes</h2>
+            <!-- Add breakfast recipes here -->
+        </div>
+        <!-- Food section 2 -->
+        <div class="col-md-4">
+            <h2 class="section-title">Lunch Recipes</h2>
+            <!-- Add lunch recipes here -->
+        </div>
+        <!-- Food section 3 -->
+        <div class="col-md-4">
+            <h2 class="section-title">Dinner Recipes</h2>
+            <!-- Add dinner recipes here -->
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
 
 <!-- Features section -->
 <section class="container px-0">
