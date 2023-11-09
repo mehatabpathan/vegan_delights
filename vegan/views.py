@@ -7,7 +7,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.http import HttpResponseRedirect
 from django.views import generic, View
-from .models import Recipe, MealPlanItem, Comment
+from .models import Recipe, MealPlanItem, Comment, Category
 from .forms import CommentForm, RecipeForm, MealPlanForm
 
 
@@ -31,6 +31,20 @@ class RecipeDetail(View):
     This view is used to display the full recipe details including comments.
     It also includes the comment form and add to meal plan form
     """
+
+    def index(request):
+        breakfast_recipes = Recipe.objects.filter(category__name='Breakfast')[:3]
+        lunch_recipes = Recipe.objects.filter(category__name='Lunch')[:3]
+        dinner_recipes = Recipe.objects.filter(category__name='Dinner')[:3]
+
+        context = {
+            'breakfast_recipes': breakfast_recipes,
+            'lunch_recipes': lunch_recipes,
+            'dinner_recipes': dinner_recipes,
+        }
+
+        return render(request, 'index.html', context)
+
     def get(self, request, slug):
         """
         Retrives the recipe and related comments from the database

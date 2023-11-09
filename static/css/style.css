@@ -7,13 +7,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    /* background-color: rgb(252, 247, 242); */
+    background-color: rgb(252, 247, 242);
 }
 
 .content {
-    /* background-image: url(../images/bgimage.jpeg); 
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.5); */
     min-height: calc(100vh - 90px);
 }
 
@@ -36,18 +33,18 @@ body {
 }
 
 .navbar ul a {
-    color: #09120b;
+    color: #442E10;
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
 }
 
 .navbar a:hover {
-    color: #060c06;
+    color: #886363;
 }
 
 .logo-image {
-    height: 100px; 
+    height: 100px;
 }
 
 .profile-icon {
@@ -57,13 +54,8 @@ body {
 /* Home Page */
 
 .hero-text-outer {
-    background-image: url(../images/bgimage.jpeg);
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.5);
-    min-height: 50vh; /* 100% of the viewport height */
-    min-width: 100vw; /* 100% of the viewport width */
+    background-color: #F4DDD8;
+    min-height: 200px;
 }
 
 .hero-text {
@@ -79,13 +71,13 @@ body {
 
 .feature-image {
     text-align: center;
-    color: #080707;
+    color: #886363;
 }
 
 .feature-title {
     font-family: 'Playfair Display', serif;
     font-size: 30px;
-    color: #0a0909;
+    color: #886363;
     padding-top: 10px;
     text-align: center;
 }
