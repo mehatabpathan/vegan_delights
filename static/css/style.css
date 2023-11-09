@@ -130,7 +130,7 @@ body {
 }
 
 .recipe-detail-card {
-    border: 0.5px solid #D8B646;
+    border: 0.5px solid #000;
 }
 
 .recipe-detail-img {
@@ -163,7 +163,7 @@ body {
 /* Add Recipe */
 
 .add-recipe input, .add-recipe textarea, .add-recipe select {
-    border: 1px solid #D8B646;
+    border: 1px solid #000;
 }
 
 .add-recipe input[type=file] {
@@ -214,12 +214,12 @@ body {
     text-align: center;
     padding: 20px 0;
     border-radius: 2%;
-    border: 1px solid #D8B646;
+    border: 1px solid #000;
 }
 
 .signup input, .login input {
     width: 90%;
-    border: 1px solid #D8B646;
+    border: 1px solid #000;
     padding: 5px;
     margin: 5px 0 10px 0;
 } 
@@ -243,7 +243,7 @@ body {
 /* Footer */
 
 .footer-container {
-    border-top: 1px #D8B646 solid !important;
+    border-top: 1px #000 solid !important;
 }
 
 .social-networks {
