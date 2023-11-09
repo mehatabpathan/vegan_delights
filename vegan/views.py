@@ -11,9 +11,15 @@ from .models import Recipe, MealPlanItem, Comment, Category
 from .forms import CommentForm, RecipeForm, MealPlanForm
 
 
-class Home(generic.TemplateView):
-    """This view is used to display the home page"""
-    template_name = "index.html"
+class Home(View):
+    """
+    This view is used to display the home page
+    """
+    # template_name = 'index.html'
+
+    def get(self, request):
+        return render(request, 'index.html')
+
 
 
 class RecipeList(generic.ListView):
@@ -32,19 +38,6 @@ class RecipeDetail(View):
     It also includes the comment form and add to meal plan form
     """
 
-    def index(request):
-        breakfast_recipes = Recipe.objects.filter(category__name='Breakfast')[:3]
-        lunch_recipes = Recipe.objects.filter(category__name='Lunch')[:3]
-        dinner_recipes = Recipe.objects.filter(category__name='Dinner')[:3]
-
-        context = {
-            'breakfast_recipes': breakfast_recipes,
-            'lunch_recipes': lunch_recipes,
-            'dinner_recipes': dinner_recipes,
-        }
-
-        return render(request, 'index.html', context)
-
     def get(self, request, slug):
         """
         Retrives the recipe and related comments from the database
@@ -56,9 +49,9 @@ class RecipeDetail(View):
         if recipe.likes.filter(id=self.request.user.id).exists():
             liked = True
 
-        bookmarked = False
-        if recipe.bookmarks.filter(id=self.request.user.id).exists():
-            bookmarked = True
+        # bookmarked = False
+        # if recipe.bookmarks.filter(id=self.request.user.id).exists():
+        #     bookmarked = True
 
         return render(
             request,
@@ -69,7 +62,7 @@ class RecipeDetail(View):
                 "comment_form": CommentForm(),
                 "liked": liked,
                 "mealplan_form": MealPlanForm(),
-                "bookmarked": bookmarked
+                
             },
         )
 
@@ -84,9 +77,9 @@ class RecipeDetail(View):
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
             liked = True
-        bookmarked = False
-        if recipe.bookmarks.filter(id=self.request.user.id).exists():
-            bookmarked = True
+        # bookmarked = False
+        # if recipe.bookmarks.filter(id=self.request.user.id).exists():
+        #     bookmarked = True
 
         comment_form = CommentForm(data=request.POST)
 
@@ -133,7 +126,7 @@ class RecipeDetail(View):
                 "comment_form": CommentForm(),
                 "liked": liked,
                 "mealplan_form": MealPlanForm(),
-                "bookmarked": bookmarked
+                # "bookmarked": bookmarked
             },
         )
 
@@ -189,7 +182,7 @@ class UpdateRecipe(
     model = Recipe
     form_class = RecipeForm
     template_name = 'update_recipe.html'
-    success_message = "%(calculated_field)s was edited successfully"
+    success_message = "%(calculated_field)s was updated successfully"
 
     def form_valid(self, form):
         """
@@ -247,7 +240,7 @@ class DeleteRecipe(
 
 class LikeRecipe(LoginRequiredMixin, View):
     """
-    This view allows a logged in user to bookmark recipes.
+    This view allows a logged in user to like recipes.
     """
 
     def post(self, request, slug, *args, **kwargs):
@@ -282,39 +275,39 @@ class MyLikes(LoginRequiredMixin, generic.ListView):
         return Recipe.objects.filter(likes=self.request.user.id)        
 
 
-class BookmarkRecipe(LoginRequiredMixin, View):
-    """
-    This view allows a logged in user to bookmark recipes.
-    """
-    def post(self, request, slug):
-        """
-        Checks if user id already exists in the favourites
-        field in the Recipe database.
-        If they exist then remove them from the database.
-        If they don't exist then add them to the database.
-        """
-        recipe = get_object_or_404(Recipe, slug=slug)
-        if recipe.bookmarks.filter(id=request.user.id).exists():
-            recipe.bookmarks.remove(request.user)
-            messages.success(self.request, 'Recipe removed from bookmarks')
-        else:
-            recipe.bookmarks.add(request.user)
-            messages.success(self.request, 'Recipe added to bookmarks')
+# class BookmarkRecipe(LoginRequiredMixin, View):
+#     """
+#     This view allows a logged in user to bookmark recipes.
+#     """
+#     def post(self, request, slug):
+#         """
+#         Checks if user id already exists in the favourites
+#         field in the Recipe database.
+#         If they exist then remove them from the database.
+#         If they don't exist then add them to the database.
+#         """
+#         recipe = get_object_or_404(Recipe, slug=slug)
+#         if recipe.bookmarks.filter(id=request.user.id).exists():
+#             recipe.bookmarks.remove(request.user)
+#             messages.success(self.request, 'Recipe removed from bookmarks')
+#         else:
+#             recipe.bookmarks.add(request.user)
+#             messages.success(self.request, 'Recipe added to bookmarks')
 
-        return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
+#         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
 
-class MyBookmarks(LoginRequiredMixin, generic.ListView):
-    """
-    This view allows a logged in user to view their bookmarked recipes.
-    """
-    model = Recipe
-    template_name = 'my_bookmarks.html'
-    paginate_by = 8
+# class MyBookmarks(LoginRequiredMixin, generic.ListView):
+#     """
+#     This view allows a logged in user to view their bookmarked recipes.
+#     """
+#     model = Recipe
+#     template_name = 'my_bookmarks.html'
+#     paginate_by = 8
 
-    def get_queryset(self):
-        """Override get_queryset to filter by user favourites"""
-        return Recipe.objects.filter(bookmarks=self.request.user.id)
+#     def get_queryset(self):
+#         """Override get_queryset to filter by user favourites"""
+#         return Recipe.objects.filter(bookmarks=self.request.user.id)
 
 
 class MealPlan(LoginRequiredMixin, View):
@@ -353,12 +346,12 @@ class UpdateComment(
         SuccessMessageMixin, generic.UpdateView):
 
     """
-    This view is used to allow logged in users to edit their own comments
+    This view is used to allow logged in users to update their own comments
     """
     model = Comment
     form_class = CommentForm
     template_name = 'update_comment.html'
-    success_message = "Comment edited successfully"
+    success_message = "Comment updated successfully"
 
     def form_valid(self, form):
         """
@@ -370,7 +363,7 @@ class UpdateComment(
 
     def test_func(self):
         """
-        Prevent another user from editing user's comments
+        Prevent another user from updating user's comments
         """
         comment = self.get_object()
         return comment.name == self.request.user.username
