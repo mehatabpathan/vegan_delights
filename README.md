@@ -4,8 +4,8 @@ Vegan Delights is a revolutionary meal planning app designed to make vegan cooki
 
 The site acts as a repository for recipes whereby users can store their own recipes and also browse other users' recipes and bookmark them for a later date. Users can get organised for the week ahead by adding recipes to their meal planner for each day of the week. 
 
-The live link can be found here - [Vegan Delights](https://vegan-delights-d7e8edb51d3f.herokuapp.com/)
-The GitHub link can be found here - [Vegan Delights](https://github.com/mehatabpathan/vegan_delights.git)
+- The live link can be found here - [Vegan Delights](https://vegan-delights-d7e8edb51d3f.herokuapp.com/)
+- The GitHub link can be found here - [Vegan Delights](https://github.com/mehatabpathan/vegan_delights.git)
 
 ![Colour Palette](docs/readme_images/site_mockup.png)
 ## Table of Contents
