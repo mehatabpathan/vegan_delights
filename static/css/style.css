@@ -265,10 +265,7 @@ body {
 .social-networks i:hover {
     color: #142a2b;
 }
-.m {
-    color: red;
-    background-color: #128496;
-}
+
 /* Media Queries */
 
 /* For Medium devices (tablets, less than 992px) */
@@ -306,4 +303,4 @@ body {
     .mp-button, .action-btn {
         font-size: .75rem;
     }
-}.
+}
