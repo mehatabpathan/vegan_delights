@@ -10,7 +10,7 @@ The GitHub link can be found here - [Vegan Delights](https://github.com/mehatabp
 ![Colour Palette](docs/readme_images/site_mockup.png)
 ## Table of Contents
 
-- [The Easy Eater](#the-easy-eater)
+- [Vegan Delights](#vegan-delights)
   * [User Experience (UX)](#user-experience-ux)
     + [User Stories](#user-stories)
     + [Design](#design)
@@ -21,11 +21,16 @@ The GitHub link can be found here - [Vegan Delights](https://github.com/mehatabp
   * [Agile Methodology](#agile-methodology)
   * [Data Model](#data-model)
   * [Testing](#testing)
+    + [HTML Validation](#html-validation)
+    + [CSS Validation](#css-validation)
+    + [JavaScript Validation](#javascript-validation)
+    + [Python Linter Validation](#python-linter-validation)
+    + [Lighthouse](#lighthouse)
   * [Security Features and Defensive Design](#security-features-and-defensive-design)
     + [User Authentication](#user-authentication)
     + [Form Validation](#form-validation)
     + [Database Security](#database-security)
-    + [Custom error pages:](#custom-error-pages-)
+    + [Custom error pages](#custom-error-pages)
   * [Features](#features)
     + [Header](#header)
     + [Footer](#footer)
@@ -39,6 +44,7 @@ The GitHub link can be found here - [Vegan Delights](https://github.com/mehatabp
     + [My Meal Plan](#my-meal-plan)
     + [My Recipes Page](#my-recipes-page)
     + [My Bookmarks Page](#my-bookmarks-page)
+    + [My Likes Page](#my-likes-page)
     + [Error Pages](#error-pages)
     + [Future Features](#future-features)
   * [Deployment - Heroku](#deployment---heroku)
@@ -52,31 +58,33 @@ The GitHub link can be found here - [Vegan Delights](https://github.com/mehatabp
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 ## User Experience (UX)
 
-A visitor to Easy Eater would be someone who is most likely an adult who enjoys their food and trying new recipes but also wants to save time and effort when deciding what to cook for dinner every night of the week.
+A Site-Visitor to Vegan Delights would be someone who takes pleasure in savoring delicious meals and exploring new recipes. They are eager to expand and enrich their collection of recipes or simply share them with others.
+
 
 ### User Stories
 
 #### EPIC | User Profile
-- As a Site User I can register an account so that I can add/edit/delete my recipes and comment on and bookmark other people's recipes and add recipes to my meal planner.
-- As a Site User, I can log in or log out of my account so that I can keep my account secure.
-- As a Site User I can see my login status so that I know if I'm logged in or out.
+- As a Site User, I can register myself to this website, so that I can create/update/delete my own recipes and comments.
+- As a Site User, I can see my current login status, so that I know if I am logged in or logged out.
+- As a Site User, I can log in and out of my account, so that post, comment and like recipes.
 
 #### EPIC | User Navigation
-- As a Site User I can immediately understand the purpose of the site so that I can decide if it meets my needs.
-- As a Site User, I can intuitively navigate around the site so that I can find content and understand where I am on the site.
-- As a Site User, I can view a paginated list of recipes so that I can select a recipe to view.
-- As a Site User, I can click on a recipe so that I can read the full recipe, ingredients required and view comments left by users.
+- As a Site User, I can navigate myself throughout the website in an intuitive way, so that I can go back and forth between pages without an issue.
+- As a Site User, I can open a recipe with a click, so that I can see the full details, ingredients required, comments and like the recipe.
+- As a Site User, I can scroll through a paginated list of recipes, so that I can get a quick overview of many recipes.
+
 
 #### EPIC | Recipe Management
-- As a Site User, I can input my favourite recipes onto the app through an easy to use interface so that I can share them with other users.
-- As a Site User, I can edit and delete recipes that I have created so that I can easily make changes without having to start over.
-- As a Site User I can view my recipes so that I can see and manage all recipes I have created in the one location.
-- As a Site User I can view my bookmarked recipes so I can find them easily in the one location.
+- As a Site User, I can upload my own recipes through an easy form, so that I can share them with other users.
+- As a Site User, I can view my own recipes, so that I can review and manage the recipes I have created.
+- As a Site User, I can view all recipes I liked on one page, so that I can sort out my favorite recipes from the big list of all recipes.
+- As a Site User, I can edit and delete my own recipes, so that I can keep my recipes up to date or remove them.
+
 
 #### EPIC | Recipe Interaction
-- As a Site User, I can save other user's recipes to my bookmarks so that I can find them easily at a later date.
-- As a Site User, I can comment on other people's recipes so I can give my feedback.
-- As a Site User, I can edit and delete comments that I have created so that I can easily make changes if I have made a mistake.
+- As a Site User, I can comment on recipes, so that I can give my own feedback or start a conversation.
+- As a Site User, I can edit and delete my comments, so that adjust my comments if I made a mistake.
+- As a Site User, I can "Like" a recipe, so that I can sort out recipes I like from others.
 
 #### EPIC | Mealplan Management
 - As a Site User, I can add/delete recipes to my meal planner for a particular day of the week so that I can create a meal plan for the week ahead.
@@ -85,13 +93,6 @@ A visitor to Easy Eater would be someone who is most likely an adult who enjoys 
 #### EPIC | Site Administration
 - As a Site Administrator, I can create, read, update and delete recipes, comments and meal plan items so that I can manage the app content.
 
-#### User stories not yet implemented
-
-The following user stories were scoped out of the project due to time constraints and labelled as "Won't Have" on the project board on Github. It is intended that these user stories will be implemented at a later date. 
-
-- As a Site User, I can export the ingredients from the recipes on my meal plan to a shopping list and remove the ones that are not necessary so that I can have all my required ingredients for the week in one place.
-- As a Site User, I can search and filter recipes so that I can find the one I want.
-
 ### Design
 
 The site has a very simple and clean design which was purposely chosen in order to keep in theme with the site's goal. i.e. invoking a sense of calm in the user and reducing stress when it comes to everyday cooking. 
@@ -99,11 +100,12 @@ The site has a very simple and clean design which was purposely chosen in order 
 #### Colour Scheme
 Colour palette from Coolors
 
-![Colour Palette](docs/readme_images/colour_scheme.png)
+![Colour Palette](static/images/color_scheme.png)
 
-The colour scheme of the site is mainly pale cream, pink and brown with thin gold borders. The colours chosen are quite neutral and calming. 
+Throughout the development process, the color scheme underwent several revisions. Ultimately, I opted to adopt a neutral color palette to ensure that the website's purpose remained front and center, without unnecessary distractions. Given that the primary focus of the website is to experiment with and exchange recipes, a white background complemented by subtle light-colored accents felt most appropriate.
 
-Great care was taken to establish a good contrast between background colours and text at all times to ensure maximum user accessibility. 
+For these accents, I selected a golden border, imparting an element of elegance and significance to the showcased recipes. This deliberate choice of colors and highlights aligns with the site's core objectives, contributing to a harmonious and engaging user experience.
+
 
 #### Imagery
 There is only one static image on the site depicting a family dinner on the home page. The rest of the imagery will be uploaded by users for their individual recipes. 
