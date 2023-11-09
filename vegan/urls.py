@@ -16,6 +16,7 @@ urlpatterns = [
         'bookmark/<slug:slug>',
         views.BookmarkRecipe.as_view(), name='bookmark_recipe'
         ),
+    path('mybookmarks/', views.MyBookmarks.as_view(), name='my_bookmarks'),
     path(
         'recipes/<slug:slug>/',
         views.RecipeDetail.as_view(), name='recipe_detail'

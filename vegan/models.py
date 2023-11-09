@@ -38,8 +38,8 @@ class Recipe(models.Model):
     likes = models.ManyToManyField(
         User, related_name='likes', default=None, blank=True)
     status = models.IntegerField(choices=STATUS, default=1)
-    # bookmarks = models.ManyToManyField(
-    #     User, related_name='bookmark', default=None, blank=True)
+    bookmarks = models.ManyToManyField(
+        User, related_name='bookmark', default=None, blank=True)
 
     class Meta:
         """To display the recipes by created_on in descending order"""
