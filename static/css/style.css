@@ -65,7 +65,7 @@ body {
 }
 
 .home-break {
-    border-top: 1px solid #D8B646;
+    border-top: 1px solid #000;
     margin: auto !important;
 }
 
@@ -96,7 +96,7 @@ body {
 /* Recipe Cards */
 
 .recipe-card:hover, .mealplan-card:hover {
-    box-shadow: 0px 0px 4px #D8B646 !important;
+    box-shadow: 0px 0px 4px #30c860 !important;
 }
 
 .card-img-top {
@@ -187,18 +187,18 @@ body {
 /* meal plan page */
 
 .mealplan-card .card-img-top {
-    border-bottom: 1px solid #D8B646;
+    border-bottom: 1px solid #4fbd68;
 }
 
 .mp-icon {
     text-align: center;
-    color: #F4DDD8;
+    color: #4fbd68;
     padding-top: 60px;
 }
 
 .mealplan-card-header {
-    background-color: #F4DDD8;
-    border-bottom: 1px solid #D8B646;
+    background-color: #4fbd68;
+    border-bottom: 1px solid #fff;
 }
 
 .mealplan-title {
