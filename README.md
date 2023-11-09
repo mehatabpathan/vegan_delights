@@ -153,7 +153,7 @@ The Montserrat font is the main font used for the body of the website with the P
 
 ## Agile Methodology
 
-Github projects was used to manage the development process using an agile approach. Please see link to project board [here](https://github.com/AliOKeeffe/PP4_My_Meal_Planner/projects/2)
+Github projects was used to manage the development process using an agile approach. Please see link to project board [here](https://github.com/users/mehatabpathan/projects/4)
 
 The 6 Epics listed above were documented within the Github project as Milestones. A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution.
 
