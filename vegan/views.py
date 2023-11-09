@@ -275,39 +275,39 @@ class MyLikes(LoginRequiredMixin, generic.ListView):
         return Recipe.objects.filter(likes=self.request.user.id)        
 
 
-# class BookmarkRecipe(LoginRequiredMixin, View):
-#     """
-#     This view allows a logged in user to bookmark recipes.
-#     """
-#     def post(self, request, slug):
-#         """
-#         Checks if user id already exists in the favourites
-#         field in the Recipe database.
-#         If they exist then remove them from the database.
-#         If they don't exist then add them to the database.
-#         """
-#         recipe = get_object_or_404(Recipe, slug=slug)
-#         if recipe.bookmarks.filter(id=request.user.id).exists():
-#             recipe.bookmarks.remove(request.user)
-#             messages.success(self.request, 'Recipe removed from bookmarks')
-#         else:
-#             recipe.bookmarks.add(request.user)
-#             messages.success(self.request, 'Recipe added to bookmarks')
+class BookmarkRecipe(LoginRequiredMixin, View):
+    """
+    This view allows a logged in user to bookmark recipes.
+    """
+    def post(self, request, slug):
+        """
+        Checks if user id already exists in the favourites
+        field in the Recipe database.
+        If they exist then remove them from the database.
+        If they don't exist then add them to the database.
+        """
+        recipe = get_object_or_404(Recipe, slug=slug)
+        if recipe.bookmarks.filter(id=request.user.id).exists():
+            recipe.bookmarks.remove(request.user)
+            messages.success(self.request, 'Recipe removed from bookmarks')
+        else:
+            recipe.bookmarks.add(request.user)
+            messages.success(self.request, 'Recipe added to bookmarks')
 
-#         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
+        return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
 
-# class MyBookmarks(LoginRequiredMixin, generic.ListView):
-#     """
-#     This view allows a logged in user to view their bookmarked recipes.
-#     """
-#     model = Recipe
-#     template_name = 'my_bookmarks.html'
-#     paginate_by = 8
+class MyBookmarks(LoginRequiredMixin, generic.ListView):
+    """
+    This view allows a logged in user to view their bookmarked recipes.
+    """
+    model = Recipe
+    template_name = 'my_bookmarks.html'
+    paginate_by = 8
 
-#     def get_queryset(self):
-#         """Override get_queryset to filter by user favourites"""
-#         return Recipe.objects.filter(bookmarks=self.request.user.id)
+    def get_queryset(self):
+        """Override get_queryset to filter by user favourites"""
+        return Recipe.objects.filter(bookmarks=self.request.user.id)
 
 
 class MealPlan(LoginRequiredMixin, View):
