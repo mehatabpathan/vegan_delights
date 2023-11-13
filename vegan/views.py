@@ -62,6 +62,7 @@ class RecipeDetail(View):
                 "comment_form": CommentForm(),
                 "liked": liked,
                 "mealplan_form": MealPlanForm(),
+                "bookmarked": bookmarked
                 
             },
         )
@@ -77,9 +78,9 @@ class RecipeDetail(View):
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
             liked = True
-        # bookmarked = False
-        # if recipe.bookmarks.filter(id=self.request.user.id).exists():
-        #     bookmarked = True
+        bookmarked = False
+        if recipe.bookmarks.filter(id=self.request.user.id).exists():
+            bookmarked = True
 
         comment_form = CommentForm(data=request.POST)
 
@@ -126,7 +127,7 @@ class RecipeDetail(View):
                 "comment_form": CommentForm(),
                 "liked": liked,
                 "mealplan_form": MealPlanForm(),
-                # "bookmarked": bookmarked
+                "bookmarked": bookmarked
             },
         )
 
