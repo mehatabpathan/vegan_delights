@@ -49,9 +49,9 @@ class RecipeDetail(View):
         if recipe.likes.filter(id=self.request.user.id).exists():
             liked = True
 
-        # bookmarked = False
-        # if recipe.bookmarks.filter(id=self.request.user.id).exists():
-        #     bookmarked = True
+        bookmarked = False
+        if recipe.bookmarks.filter(id=self.request.user.id).exists():
+            bookmarked = True
 
         return render(
             request,
