@@ -23,14 +23,12 @@ class Home(View):
 
 
 class RecipeList(generic.ListView):
-    """
-    This view is used to display all recipes in the browse recipes page
-    """
     model = Recipe
-    queryset = Recipe.objects.filter(status=1).order_by('-created_on')
     template_name = 'browse_recipes.html'
     paginate_by = 8
 
+    def get_queryset(self):
+        return Recipe.objects.filter(status=1).order_by('-created_on')
 
 class RecipeDetail(View):
     """

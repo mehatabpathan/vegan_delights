@@ -10,6 +10,8 @@ from .validators import textfield_not_empty
 
 STATUS = ((0, "Save for later"), (1, "Publish Now"))
 
+
+
 class Category(models.Model):
     """
     Model for Category
