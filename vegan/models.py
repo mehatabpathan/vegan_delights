@@ -39,7 +39,7 @@ class Recipe(models.Model):
     image = CloudinaryField('image', default='placeholder')
     likes = models.ManyToManyField(
         User, related_name='likes', default=None, blank=True)
-    status = models.IntegerField(choices=STATUS, default=1)
+    status = models.IntegerField(choices=STATUS, default=0)
     bookmarks = models.ManyToManyField(
         User, related_name='bookmark', default=None, blank=True)
 
@@ -89,6 +89,7 @@ class Comment(models.Model):
     email = models.EmailField()
     body = models.TextField()
     created_on = models.DateTimeField(auto_now=True)
+    approved = models.BooleanField(default=False)
 
     class Meta:
         """ To display the comments by created_on in ascending order """
