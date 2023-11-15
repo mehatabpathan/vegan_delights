@@ -8,7 +8,7 @@ from cloudinary.models import CloudinaryField
 from .validators import textfield_not_empty
 
 
-STATUS = ((0, "Save for later"), (1, "Publish Now"))
+STATUS = ((0, "Draft"), (1, "Publish Now"))
 
 
 
