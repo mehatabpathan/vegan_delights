@@ -72,7 +72,7 @@ class MealPlanItem(models.Model):
     recipe = models.ForeignKey(
         Recipe, on_delete=models.CASCADE, related_name="meal_plan_item")
     day = models.IntegerField(choices=DAY_CHOICES, default='0')
-
+    
     class Meta:
         """To display the Meal Plan Items by day in ascending order"""
         ordering = ['day']
