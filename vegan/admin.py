@@ -13,6 +13,7 @@ class CategoryAdmin(admin.ModelAdmin):
     """
 
     list_display = ('admin', 'name')
+    
 
 
 @admin.register(Recipe)
