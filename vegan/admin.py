@@ -40,4 +40,7 @@ class CommentAdmin(admin.ModelAdmin):
 class MealplanAdmin(admin.ModelAdmin):
     """Allows admin to manage user meal plans via the admin panel"""
     list_display = ('user', 'recipe', 'day')
-    
+    actions = ['approve_mealplan']
+
+    def approve_mealplan(self, request, queryset):
+        queryset.update(approved=True)
