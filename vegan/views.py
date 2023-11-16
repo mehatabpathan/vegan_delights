@@ -338,6 +338,7 @@ class MealPlan(LoginRequiredMixin, View):
 
         return render(
             request, 'my_mealplan.html', {'mealplan': mealplan})
+    
 
 
 class UpdateComment(
