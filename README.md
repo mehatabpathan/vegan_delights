@@ -174,7 +174,463 @@ The diagram below details the database schema.
 
 ## Testing
 
-Testing and results can be found [here](/TESTING.md)
+### HTML Validation
+
+All HTML pages were run through the [W3C HTML Validator](https://validator.w3.org/).
+
+<details>
+<summary>Home Page</summary>
+
+![Home Page](https://cdn.discordapp.com/attachments/1049024982694498367/1136295141678780416/image.png)
+</details>
+
+<details>
+<summary>Browse Recipes</summary>
+
+![Browse Recipes](https://cdn.discordapp.com/attachments/1049024982694498367/1136295297350381689/image.png)
+</details>
+
+<details>
+<summary>Add Recipe</summary>
+
+![Add Recipe](https://cdn.discordapp.com/attachments/1049024982694498367/1136295875237380146/image.png)
+</details>
+
+<details>
+<summary>My Recipes</summary>
+
+![My Recipes](https://cdn.discordapp.com/attachments/1049024982694498367/1136296147787456512/image.png)
+</details>
+
+<details>
+<summary>My Likes</summary>
+
+![My Likes](https://cdn.discordapp.com/attachments/1049024982694498367/1136296425299378238/image.png)
+</details>
+
+<details>
+<summary>Logout</summary>
+
+![Logout](https://cdn.discordapp.com/attachments/1049024982694498367/1136296521231511614/image.png)
+</details>
+
+<details>
+<summary>Sign Up</summary>
+
+![Sign Up](https://cdn.discordapp.com/attachments/1049024982694498367/1136296672499085435/image.png)
+</details>
+
+<details>
+<summary>Login</summary>
+
+![Login](https://cdn.discordapp.com/attachments/1049024982694498367/1136296772122202122/image.png)
+</details>
+
+<details>
+<summary>Recipe Details (Waffles)</summary>
+
+![Recipe Details (Waffles)](https://cdn.discordapp.com/attachments/1049024982694498367/1136297119125344336/image.png)
+</details>
+
+<details>
+<summary>Recipe Update (Another test / deleted)</summary>
+
+![Recipe Update (Another test / deleted)](https://cdn.discordapp.com/attachments/1049024982694498367/1136297542045413527/image.png)
+</details>
+
+<details>
+<summary>Recipe Delete (Another test / deleted)</summary>
+
+![Recipe Delete (Another test / deleted)](https://cdn.discordapp.com/attachments/1049024982694498367/1136297707326152794/image.png)
+</details>
+
+<details>
+<summary>Comment Update (Comment 4 / Waffle Recipe)</summary>
+
+![Comment Update (Comment 4 / Waffle Recipe)](https://cdn.discordapp.com/attachments/1049024982694498367/1136297821537042462/image.png)
+</details>
+
+<details>
+<summary>Comment Delete (Comment 4 / Waffle Recipe)</summary>
+
+![Comment Delete (Comment 4 / Waffle Recipe)](https://cdn.discordapp.com/attachments/1049024982694498367/1136297933852131410/image.png)
+</details>
+
+### CSS Validation
+
+No errors were found when passing my CSS file through the official [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+
+<details>
+<summary>Result</summary>
+
+![CSS validation results](https://cdn.discordapp.com/attachments/1049024982694498367/1136299407197872265/image.png)
+</details>
+
+### JavaScript Validation
+
+No errors were found when passing the javascript snippet through [Jshint](https://jshint.com/).
+
+<details>
+<summary>Result</summary>
+
+![JavaScript validation results](https://cdn.discordapp.com/attachments/1049024982694498367/1136300306079174807/image.png)
+</details>
+
+### Python Linter Validation
+
+All Python files I worked with were run through the [CI Python Linter](https://pep8ci.herokuapp.com/).
+
+<details>
+<summary>admin.py</summary>
+
+![Result](https://cdn.discordapp.com/attachments/1049024982694498367/1136300547784314960/image.png)
+</details>
+
+<details>
+<summary>froms.py</summary>
+
+![Result](https://cdn.discordapp.com/attachments/1049024982694498367/1136300716458266644/image.png)
+</details>
+
+<details>
+<summary>models.py</summary>
+
+![Result](https://cdn.discordapp.com/attachments/1049024982694498367/1136300802936414328/image.png)
+</details>
+
+<details>
+<summary>cookbook/urls.py</summary>
+
+![Result](https://cdn.discordapp.com/attachments/1049024982694498367/1136300886419841125/image.png)
+</details>
+
+<details>
+<summary>views.py</summary>
+
+![Result](https://cdn.discordapp.com/attachments/1049024982694498367/1136300972805722194/image.png)
+</details>
+
+<details>
+<summary>settings.py</summary>
+
+![CSS validation results](https://cdn.discordapp.com/attachments/1049024982694498367/1136301338431586395/image.png)
+
+The lines exceeding the maximal length have been solved by adding the # noqa tag.
+</details>
+
+<details>
+<summary>dishful_discoveries/urls.py</summary>
+
+![CSS validation results](https://cdn.discordapp.com/attachments/1049024982694498367/1136301405427216474/image.png)
+</details>
+
+### Lighthouse
+
+[Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was run on all pages to check Performance, Accessibility, Best Practices, and SEO scores.
+
+<details>
+<summary>Home Page</summary>
+
+![Home Page](https://cdn.discordapp.com/attachments/1049024982694498367/1136304681988141187/image.png)
+</details>
+
+<details>
+<summary>Browse Recipes</summary>
+
+![Browse Recipes](https://cdn.discordapp.com/attachments/1049024982694498367/1136305574984822884/image.png)
+
+The drop in the performance is explained by the images and styles loading from an external source, [Cloudinary](https://cloudinary.com/).
+</details>
+
+<details>
+<summary>Add Recipe</summary>
+
+![Add Recipe](https://cdn.discordapp.com/attachments/1049024982694498367/1136306365871165531/image.png)
+
+The drop of the [accessibility](<https://cdn.discordapp.com/attachments/1049024982694498367/1136306366114439329/image.png>) is explained by missing titles. The [titles](https://cdn.discordapp.com/attachments/1049024982694498367/1136306366361911477/image.png) are not actually missing. The problem is caused by the use of the Summernote extension.
+</details>
+
+<details>
+<summary>My Recipes</summary>
+
+![My Recipes](https://cdn.discordapp.com/attachments/1049024982694498367/1136306701142868068/image.png)
+</details>
+
+<details>
+<summary>My Likes</summary>
+
+![My Likes](https://cdn.discordapp.com/attachments/1049024982694498367/1136307024154599574/image.png)
+</details>
+
+<details>
+<summary>Logout</summary>
+
+![Logout](https://cdn.discordapp.com/attachments/1049024982694498367/1136307550237757512/image.png)
+</details>
+
+<details>
+<summary>Sign Up</summary>
+
+![Sign Up](https://cdn.discordapp.com/attachments/1049024982694498367/1136307861048266823/image.png)
+</details>
+
+<details>
+<summary>Login</summary>
+
+![Login](https://cdn.discordapp.com/attachments/1049024982694498367/1136308128963633222/image.png)
+</details>
+
+<details>
+<summary>Recipe Details (Waffles)</summary>
+
+![Recipe Details (Waffles)](https://cdn.discordapp.com/attachments/1049024982694498367/1136308912241520720/image.png)
+
+The drop in the performance is explained by the images and styles loading from an external source, [Cloudinary](https://cloudinary.com/).
+</details>
+
+<details>
+<summary>Recipe Update (Another test / deleted)</summary>
+
+![Recipe Update (Another test / deleted)](https://cdn.discordapp.com/attachments/1049024982694498367/1136312079062667335/image.png)
+
+The drop of the [accessibility](<https://cdn.discordapp.com/attachments/1049024982694498367/1136306366114439329/image.png>) is explained by missing titles. The [titles](https://cdn.discordapp.com/attachments/1049024982694498367/1136306366361911477/image.png) are not actually missing. The problem is caused by the use of the Summernote extension.
+</details>
+
+<details>
+<summary>Recipe Delete (Another test / deleted)</summary>
+
+![Recipe Delete (Another test / deleted)](https://cdn.discordapp.com/attachments/1049024982694498367/1136312608845221938/image.png)
+</details>
+
+<details>
+<summary>Comment Update (Comment 4 / Waffle Recipe)</summary>
+
+![Comment Update (Comment 4 / Waffle Recipe)](https://cdn.discordapp.com/attachments/1049024982694498367/1136312961183518761/image.png)
+</details>
+
+<details>
+<summary>Comment Delete (Comment 4 / Waffle Recipe)</summary>
+
+![Comment Delete (Comment 4 / Waffle Recipe)](https://cdn.discordapp.com/attachments/1049024982694498367/1136313251106390036/image.png)
+</details>
+
+## Browser Testing
+- The website was tested on Google Chrome, Firefox, and Opera browsers with no issues noted.
+    
+## Device Testing
+- The website was viewed on a variety of devices such as Desktop, Laptop, Huawei P20 lite, and Samsung Galaxy S22 to ensure responsiveness on various screen sizes in both portrait and landscape mode. The website performed as intended. The responsive design was also checked using Chrome developer tools across multiple devices with structural integrity holding for the various sizes.
+
+## Manual Testing
+
+### Site Navigation
+| Element               | Action     | Expected Result                                                    | Pass/Fail |
+|-----------------------|------------|--------------------------------------------------------------------|-----------|
+| **NavBar**            |            |                                                                    |           |
+| Site Name (logo area) | Click      | Redirect to home                                                   | Pass      |
+| Home Link             | Click      | Redirect to home                                                   | Pass      |
+| Browse Recipes Link   | Click      | Open Browse Recipes Page                                           | Pass      |
+| Add Recipe Link       | Click      | Open Add Recipe Form                                               | Pass      |
+| Add Recipe Link       | Display    | Only visible if user in session                                    | Pass      |
+| My Account Dropdown   | Click      | Open My Account dropdown                                           | Pass      |
+| My Account Dropdown   | Display    | Text changes to username with profile icon when user is in session | Pass      |
+| Sign Up Link          | Click      | Open Sign up page                                                  | Pass      |
+| Sign Up Link          | Display    | Not visible if user in session                                     | Pass      |
+| Log In Link           | Click      | Open Login page                                                    | Pass      |
+| Log In Link           | Display    | Not visible if user in session                                     | Pass      |
+| My Recipes Link       | Click      | Open My Recipes page                                               | Pass      |
+| My Recipes Link       | Display    | Only visible if user in session                                    | Pass      |
+| My Likes Link         | Click      | Open My Likes page                                                 | Pass      |
+| My Likes Link         | Display    | Only visible if user in session                                    | Pass      |
+| Logout Link           | Click      | Open logout confirm page                                           | Pass      |
+| Logout Link           | Display    | Only visible if user in session                                    | Pass      |
+| **Mobile View**       |            |                                                                    |           |
+| Hamburger Menu        | Responsive | Display when screen size reduces to medium size                    | Pass      |
+| My Account Dropdown   | Responsive | Contents move into hamburger menu when screen size reduces to medium           | Pass      |
+| Site Name (logo area) | Click      | Redirect to home                                                   | Pass      |
+| Home Link             | Click      | Redirect to home                                                   | Pass      |
+| Browse Recipes Link   | Click      | Open Browse Recipes Page                                           | Pass      |
+| Sign Up Link          | Click      | Open Sign up page                                                  | Pass      |
+| Sign Up Link          | Display    | Not visible if user in session                                     | Pass      |
+| Log In Link           | Click      | Open Login page                                                    | Pass      |
+| Log In Link           | Display    | Not visible if user in session                                     | Pass      |
+| Add Recipe Link       | Click      | Open Add Recipe Form                                               | Pass      |
+| Add Recipe Link       | Display    | Only visible if user in session                                    | Pass      |
+| My Recipes Link       | Click      | Open My Recipes page                                               | Pass      |
+| My Recipes Link       | Display    | Only visible if user in session                                    | Pass      |
+| My Likes Link         | Click      | Open My Likes page                                                 | Pass      |
+| My Likes Link         | Display    | Only visible if user in session                                    | Pass      |
+| Logout Link           | Click      | Open logout confirm page                                           | Pass      |
+| Logout Link           | Display    | Only visible if user in session                                    | Pass      |
+| **Footer**            |            |                                                                    |           |
+| All links             | Click      | Open in new tab and to correct location                            | Pass      |
+
+### Home Page
+| Element               | Action  | Expected Result                 | Pass/Fail |
+|-----------------------|---------|---------------------------------|-----------|
+| Hero 'Sign Up' Button | Click   | Open Sign up page               | Pass      |
+| Hero 'Sign Up' Button | Display | Not visible if user in session  | Pass      |
+| Hero 'Create" Button  | Click   | Open Add Recipe page            | Pass      |
+| Hero 'Create" Button  | Display | Only visible if user in session | Pass      |
+
+### Browse Recipes Page
+| Element     | Action                  | Expected Result                                                                         | Pass/Fail |
+|-------------|-------------------------|-----------------------------------------------------------------------------------------|-----------|
+| Recipe Card | Display correct content | Display correct image, recipe title and cooktime                                        | Pass      |
+| Recipe Card | Click                   | Clicking anywhere inside the recipe card takes you to the correct recipe's detail page. | Pass      |
+| Recipe Card | Pagination              | Site will paginate 8 recipe cards to a page                                             | Pass      |
+| Recipe Card | Order                   | Recipes are sorted by newest to oldest                                                  | Pass      |
+| Recipe Card | Hover                   | Add gold border                                                                         | Pass      |
+
+### Recipe Detail Page
+| Element                        | Action              | Expected Result                                                                                                         | Pass/Fail |
+|--------------------------------|---------------------|-------------------------------------------------------------------------------------------------------------------------|-----------|
+| Recipe Content                 | Display             | Display correct recipe image, title, author, prep time, cook time, description, ingredients and method                  | Pass      |
+| Like button (Outline)          | Click               | Clicking the outlined heart changes it to a solid heart                                                                 | Pass      |
+| Like button (Outline)          | Click               | Recipe is added to the user's My Likes page                                                                             | Pass      |
+| Like button (Outline)          | Click               | Success message appears informing the user that the recipe has been added to their liked recipes                        | Pass      |
+| Like button (Outline)          | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
+| Like button (Solid)            | Click               | Clicking the solid heart changes it back to an outlined heart                                                           | Pass      |
+| Like button (Solid)            | Click               | Recipe is removed from the user's My Likes page                                                                         | Pass      |
+| Like button (Solid)            | Click               | Success message appears informing the user that the recipe has been removed from their liked recipes                    | Pass      |
+| Like button (Solid)            | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
+| Like button                    | Display             | Button only visible if user in session                                                                                  | Pass      |
+| Update recipe button           | Click               | Opens Update Recipe Form                                                                                                | Pass      |
+| Update recipe button           | Display             | Button only visible if user is the author                                                                               | Pass      |
+| Delete recipe button           | Click               | Opens Delete Recipe confirmation page                                                                                   | Pass      |
+| Delete recipe button           | Display             | Button only visible if user is the author                                                                               | Pass      |
+| User Comments                  | Display             | Displays correct name date time and comment body                                                                        | Pass      |
+| User Comments                  | Display             | Comments are ordered oldest to newest                                                                                   | Pass      |
+| Update comment button          | Display             | Button only visible if user is the comment author                                                                       | Pass      |
+| Update comment button          | Click               | Opens Update Comment Form                                                                                               | Pass      |
+| Update comment form            | Leave empty         | On submit: form won't submit                                                                                            | Pass      |
+| Update comment form            | Leave empty         | Error message displays                                                                                                  | Pass      |
+| Update comment submit button   | Click               | Form submit - page updates and comment displays in comments section with correct content                                | Pass      |
+| Update comment submit button   | Click               | Success message appears informing the user that the comment has been updated                                            | Pass      |
+| Update comment submit button   | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
+| Update comment form            | Access              | If a user tries to edit another user's comment (by changing the url) they receive a 403 error.                          | Pass      |
+| Update comment form            | Access              | If a user tries to edit a comment (by changing the url) without being signed in they are redirected to the login page   | Pass      |
+| Cancel update comment button   | Click               | Redirect user back to recipe page                                                                                       | Pass      |
+| Delete comment button          | Display             | Button only visible if user is the comment author                                                                       | Pass      |
+| Delete comment button          | Click               | Opens delete comment confirmation page                                                                                  | Pass      |
+| Confirm delete button          | Click               | Comment is removed from comment section                                                                                 | Pass      |
+| Confirm delete button          | Click               | Success message appears informing the user that the comment has been deleted                                            | Pass      |
+| Confirm delete button          | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
+| Confirm delete button          | Click               | Redirect user back to recipe page                                                                                       | Pass      |
+| Cancel delete button           | Click               | Redirect user back to recipe page                                                                                       | Pass      |
+| Delete comment                 | Access              | If a user tries to delete another user's comment (by changing the url) they receive a custom 403 error.                 | Pass      |
+| Delete comment                 | Access              | If a user tries to delete a comment (by changing the url) without being signed in they are redirected to the login page | Pass      |
+| Add comment Form               | Display             | Form only visible if user in session                                                                                    | Pass      |
+| Add comment Form submit button | Leave empty         | On submit: form won't submit                                                                                            | Pass      |
+| Add comment Form submit button | Leave empty         | Error message displays                                                                                                  | Pass      |
+| Add comment Form submit button | Filled in           | Form submit - page updates and comment displays in comments section with correct content                                | Pass      |
+| Add comment Form submit button | Click               | Success message appears informing the user that the comment has been added                                              | Pass      |
+| Add comment Form submit button | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
+
+### Add Recipe Page
+| Element                       | Action                | Expected Result                                                                                                     | Pass/Fail |
+|-------------------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------|-----------|
+| Add Recipe                    | Access                | If a user tries to add a recipe (by changing the url) without being signed in they are redirected to the login page | Pass      |
+| Form Text Input (if required) | Leave blank           | On Submit: Warning appears, form won't submit                                                                       | Pass      |
+| Recipe Title                  | Duplicate Entry       | On Submit: Warning appears, form won't submit                                                                       | Pass      |
+| Form image select button      | Click                 | Open device storage                                                                                                 | Pass      |
+| Form image select button      | Display               | Chosen image name displayed once selected                                                                           | Pass      |
+| Form image select button      | Display               | Default image is used if no image is selected                                                                       | Pass      |
+| Cancel button                 | Click                 | Redirect to Browse Recipes page                                                                                     | Pass      |
+| Add Recipe button(form valid) | Click                 | Form submit                                                                                                         | Pass      |
+| Add Recipe button(form valid) | Click                 | Redirect to Recipe detail page for new recipe with all information displaying correctly                             | Pass      |
+| Add Recipe button(form valid) | Click                 | Success message appears informing the user that the recipe has been created                                         | Pass      |
+| Add Recipe button(form valid) | Click                 | Success message fades after 3 seconds                                                                               | Pass      |
+
+### Update Recipe Page
+| Element            | Action  | Expected Result                                                                                                         | Pass/Fail |
+|--------------------|---------|-------------------------------------------------------------------------------------------------------------------------|-----------|
+| Update Recipe      | Access  | If a user tries to edit another user's recipe (by changing the url) they receive a custom 403 error. (forbidden access) | Pass      |
+| Update Recipe      | Access  | If a user tries to edit a recipe (by changing the url) without being signed in they are redirected to the login page    | Pass      |
+| Update Recipe Form | Display | Form has all the fields filled out with the original content                                                            | Pass      |
+| Update Button      | Click   | Updated recipe is saved                                                                                                 | Pass      |
+| Update Button      | Click   | Success message appears telling the user that the recipe has been successfully updated                                  | Pass      |
+| Update Button      | Click   | Success message fades after 3 seconds                                                                                   | Pass      |
+| Update Button      | Click   | User is redirected back to the current recipe page                                                                      | Pass      |
+| Cancel Button      | Click   | User is redirected back to the current recipe page                                                                      | Pass      |
+
+### Confirm Delete Recipe Page
+| Element       | Action | Expected Result                                                                                                        | Pass/Fail |
+|---------------|--------|------------------------------------------------------------------------------------------------------------------------|-----------|
+| Delete recipe | Access | If a user tries to delete another user's recipe (by changing the url) they receive a custom 403 error.                 | Pass      |
+| Delete recipe | Access | If a user tries to delete a recipe (by changing the url) without being signed in they are redirected to the login page | Pass      |
+| Delete Button | Click  | Recipe is deleted and removed from user recipes page                                                                   | Pass      |
+| Delete Button | Click  | Success message appears telling the user that the recipe has been successfully deleted                                 | Pass      |
+| Delete Button | Click  | User is redirected back to the My recipes page                                                                         | Pass      |
+| Cancel Button | Click  | Redirect to current recipe page                                                                                        | Pass      |
+
+### My Recipes Page
+| Element         | Action               | Expected Result                                                                                                  | Pass/Fail |
+|-----------------|----------------------|------------------------------------------------------------------------------------------------------------------|-----------|
+| My Recipes Page | Access               | If a user tries to access this page (by changing url) without being signed in they are redirected to the Login page | Pass      |
+| My Recipes Page | Display              | Only displays the recipes that the user is the author for                                                        | Pass      |
+| Recipe Card     | Card Content Display | Display correct image, recipe title and cooktime                                                                 | Pass      |
+| Recipe Card     | Click                | Clicking anywhere inside the recipe card takes you to the correct recipe's detail page.                          | Pass      |
+| Recipe Card     | Pagination           | Site will paginate 8 recipe cards to a page                                                                      | Pass      |
+| Recipe Card     | Order                | Recipes are sorted by newest to oldest                                                                           | Pass      |
+| Recipe Card     | Hover                | Display gold border                                                                                              | Pass      |
+
+### My Likes Page
+| Element           | Action               | Expected Result                                                                                                  | Pass/Fail |
+|-------------------|----------------------|------------------------------------------------------------------------------------------------------------------|-----------|
+| My Likes Page     | Access               | If a user tries to access this page (by changing url) without being signed in they are redirected the Login page | Pass      |
+| My Likes Page     | Display              | Only the recipes the user has book marked are shown                                                              | Pass      |
+| Recipe Card       | Card Content Display | Display correct image, recipe title and cook time                                                                | Pass      |
+| Recipe Card       | Click                | Clicking anywhere inside the recipe card takes you to the correct recipe's detail page.                          | Pass      |
+| Recipe Card       | Pagination           | Site will paginate 8 recipe cards to a page                                                                      | Pass      |
+| Recipe Card       | Order                | Recipes are sorted by newest to oldest                                                                           | Pass      |
+| Recipe Card       | Hover                | Display gold border                                                                                              | Pass      |
+
+### Django All Auth Pages
+| Element                    | Action                                    | Expected Result                            | Pass/Fail |
+|----------------------------|-------------------------------------------|--------------------------------------------|-----------|
+| **Sign Up**                |                                           |                                            |           |
+| Log in link                | Click                                     | Redirect to login page                     | Pass      |
+| Username field             | Leave empty                               | On submit: form won't submit               | Pass      |
+| Username field             | Leave empty                               | Error message displays                     | Pass      |
+| Username field             | Insert correct format                     | On submit: form submit                     | Pass      |
+| Username field             | Insert duplicate username                 | On submit: form won't submit               | Pass      |
+| Username field             | Insert duplicate username                 | Error message displays                     | Pass      |
+| Email field                | Insert incorrect format                   | On submit: form won't submit               | Pass      |
+| Email field                | Insert incorrect format                   | Error message displays                     | Pass      |
+| Email field                | Insert correct format                     | On submit: form submit                     | Pass      |
+| Email field                | Leave empty                               | On submit: form submit                     | Pass      |
+| Email field                | Insert duplicate email                    | On submit: form won't submit               | Pass      |
+| Email field                | Insert duplicate email                    | Error message displays                     | Pass      |
+| Password field             | Insert incorrect format                   | On submit: form won't submit               | Pass      |
+| Password field             | Insert incorrect format                   | Error message displays                     | Pass      |
+| Password field             | Passwords don't match                     | On submit: form won't submit               | Pass      |
+| Password field             | Passwords don't match                     | Error message displays                     | Pass      |
+| Password field             | Insert correct format and passwords match | On submit: form submit                     | Pass      |
+| Sign Up button(form valid) | Click                                     | Form submit                                | Pass      |
+| Sign Up button(form valid) | Click                                     | Redirect to home page                      | Pass      |
+| Sign Up button(form valid) | Click                                     | Success message confirming login appears   | Pass      |
+| Sign Up button(form valid) | Click                                     | Success message fades after 3 seconds      | Pass      |
+| **Log in**                 |                                           |                                            |           |
+| Sign up link               | Click                                     | Redirect to sign up page                   | Pass      |
+| Username field             | Leave empty                               | On submit: form won't submit               | Pass      |
+| Username field             | Leave empty                               | Error message displays                     | Pass      |
+| Username field             | Insert wrong username                     | On submit: form won't submit               | Pass      |
+| Username field             | Insert wrong username                     | Error message displays                     | Pass      |
+| Password field             | Leave empty                               | On submit: form won't submit               | Pass      |
+| Password field             | Leave empty                               | Error message displays                     | Pass      |
+| Password field             | Insert wrong password                     | On submit: form won't submit               | Pass      |
+| Password field             | Insert wrong password                     | Error message displays                     | Pass      |
+| Login button(form valid)   | Click                                     | Form submit                                | Pass      |
+| Login button(form valid)   | Click                                     | Redirect to home page                      | Pass      |
+| Login button(form valid)   | Click                                     | Success message confirming login appears   | Pass      |
+| Login button(form valid)   | Click                                     | Success message fades after 3 seconds      | Pass      |
+| **Log Out**                |                                           |                                            |           |
+| Logout button              | Click                                     | Redirect to homepage                       | Pass      |
+| Logout button              | Click                                     | Success message confirming log out appears | Pass      |
+| Logout button              | Click                                     | Success message fades after 3 seconds      | Pass      |
+
+
+
 
 ## Security Features and Defensive Design
 
