@@ -214,12 +214,13 @@ body {
     text-align: center;
     padding: 20px 0;
     border-radius: 2%;
-    border: 1px solid #000;
+    border: 1px solid #808080; /* Change border color to gray */
+    background-color: #F0F0F0;
 }
 
 .signup input, .login input {
     width: 90%;
-    border: 1px solid #000;
+    border: 1px solid #808080;
     padding: 5px;
     margin: 5px 0 10px 0;
 } 
@@ -227,8 +228,19 @@ body {
 .signup label, .login label {
     display: block;
     text-align: center;
-    color: #442E10;
+    color: #333333;
     font-weight: bold;
+}
+.signup button, .login button {
+    /* width: 100%;  */
+    padding: 10px; 
+    background-color: #4CAF50; 
+    color: #FFFFFF; 
+    border: 1px solid #367c39; 
+}
+
+.signup button:hover, .login button:hover{
+    background-color: #45a049; 
 }
 
 .login label[for="id_remember"] {
