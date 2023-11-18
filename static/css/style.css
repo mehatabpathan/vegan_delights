@@ -163,7 +163,7 @@ body {
 /* Add Recipe */
 
 .add-recipe input, .add-recipe textarea, .add-recipe select {
-    border: 1px solid #000;
+    border: 1px solid #808080;
 }
 
 .add-recipe input[type=file] {
@@ -171,17 +171,17 @@ body {
 }
 
 .add-recipe label {
-    color: #212018;
+    color: #555555;
     font-weight: bold;
 } 
 
 .clearablefileinput {
-    color: #212018;
+    color: #555555;
     border: none
 }
 
 .add-recipe #div_id_image a {
-    color: black !important;
+    color: #333333 !important;
 }
 
 /* meal plan page */
