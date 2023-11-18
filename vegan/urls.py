@@ -37,4 +37,8 @@ urlpatterns = [
         'comments/<int:pk>/delete/',
         views.DeleteComment.as_view(), name='delete_comment'
         ),
+    path(
+        'mealplant/remove/<str:day>/',
+        views.ClearMealPlanDay.as_view(), name='delete_meal_plant_day'
+        ),     
 ]

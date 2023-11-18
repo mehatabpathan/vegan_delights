@@ -29,6 +29,7 @@
                     <h3 class="card-title recipe-detail-title text-center text-truncate">{{ meal.recipe.title }}</h3>
                     <a href="{% url 'recipe_detail' meal.recipe.slug %}" class="stretched-link"
                         aria-label="recipe-detail"></a>
+                    <a href="{% url 'delete_meal_plant_day' meal.day %}" class="stretched-link" aria-label="browse-recipes"> <i class="fas fa-trash mp-icon fa-3x "></i></a>
                 </div>
                 {% else %}
                 <i class="fas fa-calendar-plus mp-icon fa-6x card-img-top"></i>

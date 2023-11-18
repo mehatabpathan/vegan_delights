@@ -405,3 +405,18 @@ class DeleteComment(
         """ Return to recipe detail view when comment deleted sucessfully"""
         recipe = self.object.recipe
         return reverse_lazy('recipe_detail', kwargs={'slug': recipe.slug})
+    
+class ClearMealPlanDay(View):
+    """
+    
+    """
+    success_message = "Recipe removed from day successfully"
+
+    def get(self, request, day):
+        """
+       
+        """
+        meal_plant_day = MealPlanItem.objects.get(day=day, user=request.user)
+        meal_plant_day.delete()
+        messages.success(self.request, self.success_message)
+        return HttpResponseRedirect(reverse('my_mealplan'))    
