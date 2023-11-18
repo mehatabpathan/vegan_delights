@@ -11,14 +11,12 @@ from .validators import textfield_not_empty
 STATUS = ((0, "Draft"), (1, "Publish Now"))
 
 
-
 class Category(models.Model):
     """
     Model for Category
     """
     admin = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=20)
-   
 
     def __str__(self):
         return self.name
@@ -43,7 +41,6 @@ class Recipe(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     bookmarks = models.ManyToManyField(
         User, related_name='bookmark', default=None, blank=True)
-    
 
     class Meta:
         """To display the recipes by created_on in descending order"""
@@ -82,7 +79,7 @@ class MealPlanItem(models.Model):
 
     def __str__(self):
         return f"Meal Plan for {self.day} by {self.user}"
-    
+
 
 class Comment(models.Model):
     """Model for Comment"""
@@ -100,3 +97,4 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
+        

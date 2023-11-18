@@ -2,8 +2,7 @@
 
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import Category,Recipe, Comment, MealPlanItem
-
+from .models import Category, Recipe, Comment, MealPlanItem
 
 
 @admin.register(Category)
@@ -11,9 +10,7 @@ class CategoryAdmin(admin.ModelAdmin):
     """
     Allows admin to manage categories via the admin panel
     """
-
     list_display = ('admin', 'name')
-    
 
 
 @admin.register(Recipe)
