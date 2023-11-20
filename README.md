@@ -193,67 +193,79 @@ All HTML pages were run through the [W3C HTML Validator](https://validator.w3.or
 <details>
 <summary>Add Recipe</summary>
 
-![Add Recipe](https://cdn.discordapp.com/attachments/1049024982694498367/1136295875237380146/image.png)
+![Add Recipe](docs/readme_images/testing/addrecipetest.png)
+</details>
+
+<details>
+<summary>My Meal Plan</summary>
+
+![My Mean Plan](docs/readme_images/testing/mealplantest.png)
 </details>
 
 <details>
 <summary>My Recipes</summary>
 
-![My Recipes](https://cdn.discordapp.com/attachments/1049024982694498367/1136296147787456512/image.png)
+![My Recipes](docs/readme_images/testing/myrcipestest.png)
 </details>
 
 <details>
 <summary>My Likes</summary>
 
-![My Likes](https://cdn.discordapp.com/attachments/1049024982694498367/1136296425299378238/image.png)
+![My Likes](docs/readme_images/testing/mylikestest.png)
+</details>
+
+<details>
+<summary>My Booksmarks</summary>
+
+![My bookmarks](docs/readme_images/testing/mybookmarkstest.png)
 </details>
 
 <details>
 <summary>Logout</summary>
 
-![Logout](https://cdn.discordapp.com/attachments/1049024982694498367/1136296521231511614/image.png)
+![Logout](docs/readme_images/testing/logout.png)
 </details>
 
 <details>
 <summary>Sign Up</summary>
 
-![Sign Up](https://cdn.discordapp.com/attachments/1049024982694498367/1136296672499085435/image.png)
+![Sign Up](docs/readme_images/testing/)
 </details>
 
 <details>
 <summary>Login</summary>
 
-![Login](https://cdn.discordapp.com/attachments/1049024982694498367/1136296772122202122/image.png)
+![Login](docs/readme_images/testing/login.png)
 </details>
 
 <details>
-<summary>Recipe Details (Waffles)</summary>
+<summary>Recipe Details (ginger loaf cake)</summary>
 
-![Recipe Details (Waffles)](https://cdn.discordapp.com/attachments/1049024982694498367/1136297119125344336/image.png)
+![Recipe Details (ginger loaf cake)](docs/readme_images/testing/recipedetailtest.png)
 </details>
 
 <details>
-<summary>Recipe Update (Another test / deleted)</summary>
+<summary>Recipe Update</summary>
 
-![Recipe Update (Another test / deleted)](https://cdn.discordapp.com/attachments/1049024982694498367/1136297542045413527/image.png)
+![Recipe Update](docs/readme_images/testing/recipeupdatetest.png)
 </details>
 
 <details>
-<summary>Recipe Delete (Another test / deleted)</summary>
+<summary>Recipe Delete</summary>
 
-![Recipe Delete (Another test / deleted)](https://cdn.discordapp.com/attachments/1049024982694498367/1136297707326152794/image.png)
+![Recipe Delete](docs/readme_images/testing/recipedeltest.png)
 </details>
 
 <details>
-<summary>Comment Update (Comment 4 / Waffle Recipe)</summary>
+<summary>Comment Update</summary>
 
-![Comment Update (Comment 4 / Waffle Recipe)](https://cdn.discordapp.com/attachments/1049024982694498367/1136297821537042462/image.png)
+![Comment Update](docs/readme_images/testing/commentuptest.png)
 </details>
 
 <details>
-<summary>Comment Delete (Comment 4 / Waffle Recipe)</summary>
+<summary>Comment Delete</summary>
 
-![Comment Delete (Comment 4 / Waffle Recipe)](https://cdn.discordapp.com/attachments/1049024982694498367/1136297933852131410/image.png)
+![Comment Delete](docs/readme_images/testing/commentdeltest.png)
 </details>
 
 ### CSS Validation
@@ -263,7 +275,7 @@ No errors were found when passing my CSS file through the official [W3C CSS Vali
 <details>
 <summary>Result</summary>
 
-![CSS validation results](https://cdn.discordapp.com/attachments/1049024982694498367/1136299407197872265/image.png)
+![CSS validation results](docs/readme_images/testing/cssvalidation.png)
 </details>
 
 ### JavaScript Validation
@@ -273,7 +285,7 @@ No errors were found when passing the javascript snippet through [Jshint](https:
 <details>
 <summary>Result</summary>
 
-![JavaScript validation results](https://cdn.discordapp.com/attachments/1049024982694498367/1136300306079174807/image.png)
+![JavaScript validation results](docs/readme_images/testing/jshintvali.png)
 </details>
 
 ### Python Linter Validation
@@ -283,45 +295,45 @@ All Python files I worked with were run through the [CI Python Linter](https://p
 <details>
 <summary>admin.py</summary>
 
-![Result](https://cdn.discordapp.com/attachments/1049024982694498367/1136300547784314960/image.png)
+![Result](docs/readme_images/testing/admin.png)
 </details>
 
 <details>
 <summary>froms.py</summary>
 
-![Result](https://cdn.discordapp.com/attachments/1049024982694498367/1136300716458266644/image.png)
+![Result](docs/readme_images/testing/forms.png)
 </details>
 
 <details>
 <summary>models.py</summary>
 
-![Result](https://cdn.discordapp.com/attachments/1049024982694498367/1136300802936414328/image.png)
+![Result](docs/readme_images/testing/models.png)
 </details>
 
 <details>
-<summary>cookbook/urls.py</summary>
+<summary>vegan/urls.py</summary>
 
-![Result](https://cdn.discordapp.com/attachments/1049024982694498367/1136300886419841125/image.png)
+![Result](docs/readme_images/testing/vegan:urls.png)
 </details>
 
 <details>
 <summary>views.py</summary>
 
-![Result](https://cdn.discordapp.com/attachments/1049024982694498367/1136300972805722194/image.png)
+![Result](docs/readme_images/testing/viewsvali.png)
 </details>
 
 <details>
 <summary>settings.py</summary>
 
-![CSS validation results](https://cdn.discordapp.com/attachments/1049024982694498367/1136301338431586395/image.png)
+![Results](docs/readme_images/testing/settingvali.png)
 
 The lines exceeding the maximal length have been solved by adding the # noqa tag.
 </details>
 
 <details>
-<summary>dishful_discoveries/urls.py</summary>
+<summary>vegan_deligts/urls.py</summary>
 
-![CSS validation results](https://cdn.discordapp.com/attachments/1049024982694498367/1136301405427216474/image.png)
+![Results](docs/readme_images/testing/vegandelightsurls.png)
 </details>
 
 ### Lighthouse
