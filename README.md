@@ -100,7 +100,7 @@ The site has a very simple and clean design which was purposely chosen in order 
 #### Colour Scheme
 Colour palette from Coolors
 
-![Colour Palette](static/images/color_scheme.png)
+![Colour Palette](static/docs/readme_images/color_scheme.png)
 
 Throughout the development process, the color scheme underwent several revisions. Ultimately, I opted to adopt a neutral color palette to ensure that the website's purpose remained front and center, without unnecessary distractions. Given that the primary focus of the website is to experiment with and exchange recipes, a white background complemented by subtle light-colored accents felt most appropriate.
 
@@ -181,7 +181,7 @@ All HTML pages were run through the [W3C HTML Validator](https://validator.w3.or
 <details>
 <summary>Home Page</summary>
 
-![Home Page](https://cdn.discordapp.com/attachments/1049024982694498367/1136295141678780416/image.png)
+![Home Page](static/docs/readme_images/homepagetest.png)
 </details>
 
 <details>
