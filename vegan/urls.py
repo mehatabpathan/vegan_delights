@@ -39,6 +39,5 @@ urlpatterns = [
         ),
     path(
         'mealplant/remove/<str:day>/',
-        views.ClearMealPlanDay.as_view(), name='delete_meal_plant_day'
-        ),     
+        views.ClearMealPlanDay.as_view(), name='delete_meal_plant_day'),     
 ]
