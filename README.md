@@ -696,8 +696,6 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | Logout button              | Click                                     | Success message fades after 3 seconds      | Pass      |
 
 
-
-
 ## Security Features and Defensive Design
 
 ### User Authentication
@@ -789,9 +787,9 @@ Custom Error Pages were created to give the user more information on the error a
 - Django allauth was installed and used to create the Sign up, Log in and Log out functionality. 
 - Success messages inform the user if they have logged in/ logged out successfully.
 
-### Browse Recipes
+### Explore Recipes
 
-![header](docs/readme_images/features/browse_page.png)
+![header](docs/readme_images/features/b_page.png)
 
 - This page displays all recipes with a status of published with the most recent recipes displayed first.
 - The recipe cards are paginated after every 8 recipes. 
@@ -982,14 +980,14 @@ Add the following Config Vars in Heroku:
 
 The site is now live and operational.
 ## Forking this repository
-- Locate the repository at this link [The Easy Eater](https://github.com/AliOKeeffe/PP4_My_Meal_Planner).
+- Locate the repository at this link [Vegan Delights](https://github.com/mehatabpathan/vegan_delights).
 - At the top of the repository, on the right side of the page, select "Fork" from the buttons available. 
 - A copy of the repository is now created.
 
 ## Cloning this repository
 To clone this repository follow the below steps: 
 
-1. Locate the repository at this link [The Easy Eater](https://github.com/AliOKeeffe/PP4_My_Meal_Planner). 
+1. Locate the repository at this link [Vegan Delights](https://github.com/mehatabpathan/vegan_delights). 
 2. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the prefered cloning option, and then copy the link provided. 
 3. Open **Terminal**.
 4. In Terminal, change the current working directory to the desired location of the cloned directory.
@@ -1041,9 +1039,14 @@ To clone this repository follow the below steps:
 - [Pagination](https://docs.djangoproject.com/en/2.2/topics/pagination/#using-paginator-in-a-view)
 - [AutoSlugField](https://django-extensions.readthedocs.io/en/latest/field_extensions.html)
 - [Code Institute - Blog Walkthrough Project](https://github.com/Code-Institute-Solutions/Django3blog)
-- [Ian Meigh - Custom Validator function](eateasy/validators.py)
 
-## Acknowledgments
 
-Many thanks to my mentor Antonio for his support and advice. Thanks to 
-The Code Institute slack community for their quick responses and very helpful feedback in particular Ian Meigh.
+### Code
+
+- I created my recipe website partially with the help of [AliOKeeffe's PP4_My_Meal_Planner](https://github.com/AliOKeeffe/PP4_My_Meal_Planner).
+
+
+
+## Special Thanks
+
+[Antonio Rodríguez](https://www.linkedin.com/in/antonio-rodr%C3%ADguez-bb9b99b7/), as my mentor. Once again, he helped me a lot with getting started with the recipe website and creating the ERD.
