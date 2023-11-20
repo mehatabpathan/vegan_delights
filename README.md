@@ -343,13 +343,13 @@ The lines exceeding the maximal length have been solved by adding the # noqa tag
 <details>
 <summary>Home Page</summary>
 
-![Home Page](https://cdn.discordapp.com/attachments/1049024982694498367/1136304681988141187/image.png)
+![Home Page](docs/readme_images/lighthouse/homepagelh.png)
 </details>
 
 <details>
-<summary>Browse Recipes</summary>
+<summary>Explore Recipes</summary>
 
-![Browse Recipes](https://cdn.discordapp.com/attachments/1049024982694498367/1136305574984822884/image.png)
+![Explore Recipes](docs/readme_images/lighthouse/browserelh.png)
 
 The drop in the performance is explained by the images and styles loading from an external source, [Cloudinary](https://cloudinary.com/).
 </details>
@@ -357,73 +357,82 @@ The drop in the performance is explained by the images and styles loading from a
 <details>
 <summary>Add Recipe</summary>
 
-![Add Recipe](https://cdn.discordapp.com/attachments/1049024982694498367/1136306365871165531/image.png)
+![Add Recipe](docs/readme_images/lighthouse/addrecipelh.png)
+</details>
 
-The drop of the [accessibility](<https://cdn.discordapp.com/attachments/1049024982694498367/1136306366114439329/image.png>) is explained by missing titles. The [titles](https://cdn.discordapp.com/attachments/1049024982694498367/1136306366361911477/image.png) are not actually missing. The problem is caused by the use of the Summernote extension.
+<details>
+<summary>My meal Plan</summary>
+
+![My meal Plan](docs/readme_images/lighthouse/mealplanlh.png)
 </details>
 
 <details>
 <summary>My Recipes</summary>
 
-![My Recipes](https://cdn.discordapp.com/attachments/1049024982694498367/1136306701142868068/image.png)
+![My Recipes](docs/readme_images/lighthouse/myrecipeslh.png)
 </details>
 
 <details>
 <summary>My Likes</summary>
 
-![My Likes](https://cdn.discordapp.com/attachments/1049024982694498367/1136307024154599574/image.png)
+![My Likes](docs/readme_images/lighthouse/mylikeslh.png)
+</details>
+
+<details>
+<summary>My Bookmarks</summary>
+
+![My Bookmarks](docs/readme_images/lighthouse/bookmarkslh.png)
 </details>
 
 <details>
 <summary>Logout</summary>
 
-![Logout](https://cdn.discordapp.com/attachments/1049024982694498367/1136307550237757512/image.png)
+![Logout](docs/readme_images/lighthouse/logoutlh.png)
 </details>
 
 <details>
 <summary>Sign Up</summary>
 
-![Sign Up](https://cdn.discordapp.com/attachments/1049024982694498367/1136307861048266823/image.png)
+![Sign Up](docs/readme_images/lighthouse/signuplh.png)
 </details>
 
 <details>
 <summary>Login</summary>
 
-![Login](https://cdn.discordapp.com/attachments/1049024982694498367/1136308128963633222/image.png)
+![Login](docs/readme_images/lighthouse/loginlh.png)
 </details>
 
 <details>
-<summary>Recipe Details (Waffles)</summary>
+<summary>Recipe Details (Ginger Loaf Cake)</summary>
 
-![Recipe Details (Waffles)](https://cdn.discordapp.com/attachments/1049024982694498367/1136308912241520720/image.png)
+![Recipe Details (Ginger Loaf Cake)](docs/readme_images/lighthouse/recipedetaillh.png)
 
-The drop in the performance is explained by the images and styles loading from an external source, [Cloudinary](https://cloudinary.com/).
 </details>
 
 <details>
-<summary>Recipe Update (Another test / deleted)</summary>
+<summary>Recipe Update </summary>
 
-![Recipe Update (Another test / deleted)](https://cdn.discordapp.com/attachments/1049024982694498367/1136312079062667335/image.png)
+![Recipe Update](docs/readme_images/lighthouse/recipeupdatelh.png)
 
 The drop of the [accessibility](<https://cdn.discordapp.com/attachments/1049024982694498367/1136306366114439329/image.png>) is explained by missing titles. The [titles](https://cdn.discordapp.com/attachments/1049024982694498367/1136306366361911477/image.png) are not actually missing. The problem is caused by the use of the Summernote extension.
 </details>
 
 <details>
-<summary>Recipe Delete (Another test / deleted)</summary>
+<summary>Recipe Delete</summary>
 
-![Recipe Delete (Another test / deleted)](https://cdn.discordapp.com/attachments/1049024982694498367/1136312608845221938/image.png)
+![Recipe Delete](docs/readme_images/lighthouse/recipedellh.png)
 </details>
 
 <details>
-<summary>Comment Update (Comment 4 / Waffle Recipe)</summary>
+<summary>Comment Update</summary>
 
-![Comment Update (Comment 4 / Waffle Recipe)](https://cdn.discordapp.com/attachments/1049024982694498367/1136312961183518761/image.png)
+![Comment Update](docs/readme_images/lighthouse/commentupdlh.png)
 </details>
 
 <details>
-<summary>Comment Delete (Comment 4 / Waffle Recipe)</summary>
+<summary>Comment Delete</summary>
 
-![Comment Delete (Comment 4 / Waffle Recipe)](https://cdn.discordapp.com/attachments/1049024982694498367/1136313251106390036/image.png)
+![Comment Delete](docs/readme_images/lighthouse/commentdellh.png)
 </details>
 
 ## Browser Testing
