@@ -7,7 +7,7 @@ The site acts as a repository for recipes whereby users can store their own reci
 - The live link can be found here - [Vegan Delights](https://vegan-delights-d7e8edb51d3f.herokuapp.com/)
 - The GitHub link can be found here - [Vegan Delights](https://github.com/mehatabpathan/vegan_delights.git)
 
-![Colour Palette](static/images/color_scheme.png)
+![Colour Palette]()
 ## Table of Contents
 
 - [Vegan Delights](#vegan-delights)
@@ -100,7 +100,7 @@ The site has a very simple and clean design which was purposely chosen in order 
 #### Colour Scheme
 Colour palette from Coolors
 
-![Colour Palette](static/docs/readme_images/color_scheme.png)
+![Colour Palette](docs/readme_images/color_scheme.png)
 
 Throughout the development process, the color scheme underwent several revisions. Ultimately, I opted to adopt a neutral color palette to ensure that the website's purpose remained front and center, without unnecessary distractions. Given that the primary focus of the website is to experiment with and exchange recipes, a white background complemented by subtle light-colored accents felt most appropriate.
 
@@ -181,13 +181,13 @@ All HTML pages were run through the [W3C HTML Validator](https://validator.w3.or
 <details>
 <summary>Home Page</summary>
 
-![Home Page](static/docs/readme_images/homepagetest.png)
+![Home Page](docs/readme_images/homepagetest.png)
 </details>
 
 <details>
-<summary>Browse Recipes</summary>
+<summary>Explore Recipes</summary>
 
-![Browse Recipes](https://cdn.discordapp.com/attachments/1049024982694498367/1136295297350381689/image.png)
+![Explore Recipes](docs/readme_images/explorerecipestest.png)
 </details>
 
 <details>
