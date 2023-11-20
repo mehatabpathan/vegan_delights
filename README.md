@@ -181,13 +181,13 @@ All HTML pages were run through the [W3C HTML Validator](https://validator.w3.or
 <details>
 <summary>Home Page</summary>
 
-![Home Page](docs/readme_images/homepagetest.png)
+![Home Page](docs/readme_images/testing/homepagetest.png)
 </details>
 
 <details>
 <summary>Explore Recipes</summary>
 
-![Explore Recipes](docs/readme_images/explorerecipestest.png)
+![Explore Recipes](docs/readme_images/testing/explorerecipestest.png)
 </details>
 
 <details>
