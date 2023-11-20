@@ -449,9 +449,11 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | **NavBar**            |            |                                                                    |           |
 | Site Name (logo area) | Click      | Redirect to home                                                   | Pass      |
 | Home Link             | Click      | Redirect to home                                                   | Pass      |
-| Browse Recipes Link   | Click      | Open Browse Recipes Page                                           | Pass      |
+| Explore Recipes Link  | Click      | Open Explore Recipes Page                                          | Pass      |
 | Add Recipe Link       | Click      | Open Add Recipe Form                                               | Pass      |
 | Add Recipe Link       | Display    | Only visible if user in session                                    | Pass      |
+| My Meal Plan Link     | Click      | Open My Meal Plan page                                             | Pass      |
+| My Meal Plan Link     | Display    | Only visible if user in session                                    | Pass      |
 | My Account Dropdown   | Click      | Open My Account dropdown                                           | Pass      |
 | My Account Dropdown   | Display    | Text changes to username with profile icon when user is in session | Pass      |
 | Sign Up Link          | Click      | Open Sign up page                                                  | Pass      |
@@ -462,8 +464,12 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | My Recipes Link       | Display    | Only visible if user in session                                    | Pass      |
 | My Likes Link         | Click      | Open My Likes page                                                 | Pass      |
 | My Likes Link         | Display    | Only visible if user in session                                    | Pass      |
+| My Bookmarks Link     | Click      | Open My Bookmarks page                                             | Pass      |
+| My Bookmarks Link     | Display    | Only visible if user in session                                    | Pass      |
 | Logout Link           | Click      | Open logout confirm page                                           | Pass      |
 | Logout Link           | Display    | Only visible if user in session                                    | Pass      |
+| All Nav Links         | Hover      | lighten text                                                       | Pass      |
+|                       |            |                                                                    |           |
 | **Mobile View**       |            |                                                                    |           |
 | Hamburger Menu        | Responsive | Display when screen size reduces to medium size                    | Pass      |
 | My Account Dropdown   | Responsive | Contents move into hamburger menu when screen size reduces to medium           | Pass      |
@@ -476,12 +482,16 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | Log In Link           | Display    | Not visible if user in session                                     | Pass      |
 | Add Recipe Link       | Click      | Open Add Recipe Form                                               | Pass      |
 | Add Recipe Link       | Display    | Only visible if user in session                                    | Pass      |
+| My Meal Plan Link     | Click      | Open My Meal Plan page                                             | Pass      |
 | My Recipes Link       | Click      | Open My Recipes page                                               | Pass      |
 | My Recipes Link       | Display    | Only visible if user in session                                    | Pass      |
 | My Likes Link         | Click      | Open My Likes page                                                 | Pass      |
 | My Likes Link         | Display    | Only visible if user in session                                    | Pass      |
+| My Bookmarks Link     | Click      | Open My Bookmarks page                                             | Pass      |
+| My Bookmarks Link     | Display    | Only visible if user in session                                    | Pass      |
 | Logout Link           | Click      | Open logout confirm page                                           | Pass      |
 | Logout Link           | Display    | Only visible if user in session                                    | Pass      |
+|                       |            |                                                                    |           |
 | **Footer**            |            |                                                                    |           |
 | All links             | Click      | Open in new tab and to correct location                            | Pass      |
 
@@ -493,7 +503,7 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | Hero 'Create" Button  | Click   | Open Add Recipe page            | Pass      |
 | Hero 'Create" Button  | Display | Only visible if user in session | Pass      |
 
-### Browse Recipes Page
+### Explore Recipes Page
 | Element     | Action                  | Expected Result                                                                         | Pass/Fail |
 |-------------|-------------------------|-----------------------------------------------------------------------------------------|-----------|
 | Recipe Card | Display correct content | Display correct image, recipe title and cooktime                                        | Pass      |
@@ -506,15 +516,17 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | Element                        | Action              | Expected Result                                                                                                         | Pass/Fail |
 |--------------------------------|---------------------|-------------------------------------------------------------------------------------------------------------------------|-----------|
 | Recipe Content                 | Display             | Display correct recipe image, title, author, prep time, cook time, description, ingredients and method                  | Pass      |
-| Like button (Outline)          | Click               | Clicking the outlined heart changes it to a solid heart                                                                 | Pass      |
-| Like button (Outline)          | Click               | Recipe is added to the user's My Likes page                                                                             | Pass      |
-| Like button (Outline)          | Click               | Success message appears informing the user that the recipe has been added to their liked recipes                        | Pass      |
-| Like button (Outline)          | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
-| Like button (Solid)            | Click               | Clicking the solid heart changes it back to an outlined heart                                                           | Pass      |
-| Like button (Solid)            | Click               | Recipe is removed from the user's My Likes page                                                                         | Pass      |
-| Like button (Solid)            | Click               | Success message appears informing the user that the recipe has been removed from their liked recipes                    | Pass      |
-| Like button (Solid)            | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
-| Like button                    | Display             | Button only visible if user in session                                                                                  | Pass      |
+| Add to Meal Plan button        | Click               | Meal Plan modal pops up                                                                                                 | Pass      |
+| Add to Meal Plan button        | Display             | Button only visible if user in session                                                                                  | Pass      |
+| Bookmark button (Outline)      | Click               | Clicking the outlined bookmark changes it to a solid bookmark                                                           | Pass      |
+| Bookmark button (Outline)      | Click               | Recipe is added to the user's bookmarks page                                                                            | Pass      |
+| Bookmark button (Outline)      | Click               | Success message appears informing the user that the recipe has been added to their bookmarks                            | Pass      |
+| Bookmark button (Outline)      | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
+| Bookmark button (Solid)        | Click               | Clicking the solid bookmark changes it back to an outlined bookmark                                                     | Pass      |
+| Bookmark button (Solid)        | Click               | Recipe is removed from the user's bookmarks page                                                                        | Pass      |
+| Bookmark button (Solid)        | Click               | Success message appears informing the user that the recipe has been removed from bookmarks                              | Pass      |
+| Bookmark button (Solid)        | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
+| Bookmark button                | Display             | Button only visible if user in session                                                                                  | Pass      |
 | Update recipe button           | Click               | Opens Update Recipe Form                                                                                                | Pass      |
 | Update recipe button           | Display             | Button only visible if user is the author                                                                               | Pass      |
 | Delete recipe button           | Click               | Opens Delete Recipe confirmation page                                                                                   | Pass      |
@@ -530,7 +542,6 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | Update comment submit button   | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
 | Update comment form            | Access              | If a user tries to edit another user's comment (by changing the url) they receive a 403 error.                          | Pass      |
 | Update comment form            | Access              | If a user tries to edit a comment (by changing the url) without being signed in they are redirected to the login page   | Pass      |
-| Cancel update comment button   | Click               | Redirect user back to recipe page                                                                                       | Pass      |
 | Delete comment button          | Display             | Button only visible if user is the comment author                                                                       | Pass      |
 | Delete comment button          | Click               | Opens delete comment confirmation page                                                                                  | Pass      |
 | Confirm delete button          | Click               | Comment is removed from comment section                                                                                 | Pass      |
@@ -541,11 +552,23 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | Delete comment                 | Access              | If a user tries to delete another user's comment (by changing the url) they receive a custom 403 error.                 | Pass      |
 | Delete comment                 | Access              | If a user tries to delete a comment (by changing the url) without being signed in they are redirected to the login page | Pass      |
 | Add comment Form               | Display             | Form only visible if user in session                                                                                    | Pass      |
-| Add comment Form submit button | Leave empty         | On submit: form won't submit                                                                                            | Pass      |
-| Add comment Form submit button | Leave empty         | Error message displays                                                                                                  | Pass      |
-| Add comment Form submit button | Filled in           | Form submit - page updates and comment displays in comments section with correct content                                | Pass      |
+| Add comment Form submit button | Leave empty               | On submit: form won't submit                                                                                            | Pass      |
+| Add comment Form submit button | Leave empty               | Error message displays                                                                                                  | Pass      |
+| Add comment Form submit button | Filled in               | Form submit - page updates and comment displays in comments section with correct content                                | Pass      |
 | Add comment Form submit button | Click               | Success message appears informing the user that the comment has been added                                              | Pass      |
 | Add comment Form submit button | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
+|                                |                     |                                                                                                                         |           |
+| Meal plan model                |                     |                                                                                                                         |           |
+| Modal cancel button            | Click               | Close modal                                                                                                             | Pass      |
+| Days drop down menu            | Click               | Display list of the days of the week                                                                                    | Pass      |
+| Days drop down menu            | Click               | Default day is Monday                                                                                                   | Pass      |
+| Add to Meal Plan submit button | Click               | Form Submit                                                                                                             | Pass      |
+| Add to Meal Plan submit button | Click               | Correct recipe is added to the user's Meal Plan page for the correct day                                                | Pass      |
+| Add to Meal Plan submit button | Click               | Success message appears telling the user that the recipe has been added to their meal plan                              | Pass      |
+| Add to Meal Plan submit button | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
+| Add to Meal Plan submit button | Click               | If meal plan item already exists for that day, the success message tells the user that meal plan has been updated       | Pass      |
+| Add to Meal Plan submit button | Click               | Modal closes                                                                                                            | Pass      |
+| Meal Plan modal                | Click outside modal | Close modal                                                                   | Pass      |
 
 ### Add Recipe Page
 | Element                       | Action                | Expected Result                                                                                                     | Pass/Fail |
@@ -584,6 +607,17 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | Delete Button | Click  | User is redirected back to the My recipes page                                                                         | Pass      |
 | Cancel Button | Click  | Redirect to current recipe page                                                                                        | Pass      |
 
+### My Meal Plan Page
+| Element           | Action               | Expected Result                                                                                                  | Pass/Fail |
+|-------------------|----------------------|------------------------------------------------------------------------------------------------------------------|-----------|
+| My Meal Plan Page | Access               | If a user tries to access this page (by changing url) without being signed in they are redirected the Login page | Pass      |
+| Meal Plan card    | Order                | Cards are ordered from Monday to Sunday                                                                          | Pass      |
+| Meal Plan card    | Card Content Display | If populated: Display correct image, recipe title                                                                | Pass      |
+| Meal Plan card    | Card Content Display | If unpopulated: display placeholder image and 'Add Recipe'                                                       | Pass      |
+| Meal Plan card    | Click                | If populated: clicking anywhere inside the recipe card takes you to the detailed page for that recipe            | Pass      |
+| Meal Plan card    | Click                | If unpopulated:  clicking anywhere inside the recipe card takes you to the browse recipes page                   | Pass      |
+| Meal Plan card    | Hover                | Display gold border                                                                                              | Pass      |
+
 ### My Recipes Page
 | Element         | Action               | Expected Result                                                                                                  | Pass/Fail |
 |-----------------|----------------------|------------------------------------------------------------------------------------------------------------------|-----------|
@@ -600,6 +634,17 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 |-------------------|----------------------|------------------------------------------------------------------------------------------------------------------|-----------|
 | My Likes Page     | Access               | If a user tries to access this page (by changing url) without being signed in they are redirected the Login page | Pass      |
 | My Likes Page     | Display              | Only the recipes the user has book marked are shown                                                              | Pass      |
+| Recipe Card       | Card Content Display | Display correct image, recipe title and cook time                                                                | Pass      |
+| Recipe Card       | Click                | Clicking anywhere inside the recipe card takes you to the correct recipe's detail page.                          | Pass      |
+| Recipe Card       | Pagination           | Site will paginate 8 recipe cards to a page                                                                      | Pass      |
+| Recipe Card       | Order                | Recipes are sorted by newest to oldest                                                                           | Pass      |
+| Recipe Card       | Hover                | Display gold border                                                                                              | Pass      |
+
+### My Bookmarks Page
+| Element           | Action               | Expected Result                                                                                                  | Pass/Fail |
+|-------------------|----------------------|------------------------------------------------------------------------------------------------------------------|-----------|
+| My Bookmarks Page | Access               | If a user tries to access this page (by changing url) without being signed in they are redirected the Login page | Pass      |
+| My Bookmarks Page | Display              | Only the recipes the user has book marked are shown                                                              | Pass      |
 | Recipe Card       | Card Content Display | Display correct image, recipe title and cook time                                                                | Pass      |
 | Recipe Card       | Click                | Clicking anywhere inside the recipe card takes you to the correct recipe's detail page.                          | Pass      |
 | Recipe Card       | Pagination           | Site will paginate 8 recipe cards to a page                                                                      | Pass      |
