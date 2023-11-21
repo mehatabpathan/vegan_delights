@@ -162,9 +162,9 @@ I used principles of Object-Oriented Programming throughout this project and Dja
 
 Django AllAuth was used for the user authentication system.
 
-In order for the users to create recipes a custom recipe model was required. The recipe author is a foreign key to the User model given a recipe can only have one author.
+The central focus of the website revolves around recipes. To create a recipe, two fundamental components are essential. Firstly, every recipe requires an author, with the user creating the recipe assuming this role. Secondly, a category is needed for the recipe. While users can select the category, the modification of categories is limited to the website administrators.
 
-The Comment model allows users to comment on individual recipes and the Recipe is a foreign key in the comment model given a comment can only be linked to one recipe. 
+The Comment model permits users to leave comments on individual recipes. The Recipe and Profile serve as foreign keys in the Comment model. This setup ensures that a comment is linked to a single recipe and created by a specific user. The Likes model follows a similar structure. 
 
 The meal plan item model allows users to add recipes to a meal plan for a particular day. A meal plan item can only have one user and one recipe and is therefore linked to the User and Recipe models through foreign keys.
 
