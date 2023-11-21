@@ -170,7 +170,7 @@ The meal plan item model allows users to add recipes to a meal plan for a partic
 
 The diagram below details the database schema.
 
-![Database Schema](docs/readme_images/database_schema.png)
+![Database Schema](docs/readme_images/databaseschema.png)
 
 ## Testing
 
