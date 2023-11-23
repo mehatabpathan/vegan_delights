@@ -51,7 +51,8 @@ body {
 }
 
 .logo-image {
-    height: 100px;
+    height: 200px;
+    /* border-radius: 80% 15% 55% 50% / 55% 15% 80% 50%; */
 }
 
 .profile-icon {
