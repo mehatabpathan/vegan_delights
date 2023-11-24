@@ -85,6 +85,7 @@ A Site-Visitor to Vegan Delights would be someone who takes pleasure in savoring
 - As a Site User, I can comment on recipes, so that I can give my own feedback or start a conversation.
 - As a Site User, I can edit and delete my comments, so that adjust my comments if I made a mistake.
 - As a Site User, I can "Like" a recipe, so that I can sort out recipes I like from others.
+- As a Site User, I can "Bookmark" a recipe, so that I can sort out recipes I bookmark from others
 
 #### EPIC | Mealplan Management
 - As a Site User, I can add/delete recipes to my meal planner for a particular day of the week so that I can create a meal plan for the week ahead.
