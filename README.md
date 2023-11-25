@@ -780,7 +780,7 @@ Custom Error Pages were created to give the user more information on the error a
 
 ![header](docs/readme_images/features/section2.png)
 
-- The "What We Do' section gives a brief overview of what the site has to offer and summarises the basic features with three simple steps illustrated with font-awesome icons and created links to the three icons which redirects to their pages.
+- The "Why Choose Vegan Delights?" section gives a brief overview of what the site has to offer and summarises the basic features with three simple steps illustrated with font-awesome icons and created links to the three icons which redirects to their pages.
 
 ### User Account Pages
 
