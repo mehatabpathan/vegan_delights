@@ -767,20 +767,20 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Call to Action Section**
 
-![header](docs/readme_images/features/call_out.png)
+![header](docs/readme_images/features/section1.png)
 
-- The home page includes a call to action section which encourages the user to sign up to the site with the message "Take the stress out of everyday cooking!" and an image of a family dinner.
+- The home page includes a call to action section which encourages the user to sign up to the site with the message "Discover the World of Vegan Delights!".
 - The CTA includes a sign up button which takes the user to the sign up page.
-- If a user is already signed in the message changes to 'Welcome back to The Easy Eater' and the user is encouraged to create a new recipe.
+- If a user is already signed in the message changes to 'Welcome back to Vegan Delights' and the user is encouraged to create a new recipe.
 - The sign up button changes to a 'Create' button which takes the user to the 'Add recipe' page. 
 
-![header](docs/readme_images/features/callout_logged_in.png)
+![header](docs/readme_images/features/sectionuser.png)
 
-**What We Do Section**
+**Why Choose Vegan Delights?**
 
-![header](docs/readme_images/features/what_we_do.png)
+![header](docs/readme_images/features/section2.png)
 
-- The "What We Do' section gives a brief overview of what the site has to offer and summarises the basic features with three simple steps illustrated with font-awesome icons.
+- The "What We Do' section gives a brief overview of what the site has to offer and summarises the basic features with three simple steps illustrated with font-awesome icons and created links to the three icons which redirects to their pages.
 
 ### User Account Pages
 
