@@ -801,7 +801,7 @@ Custom Error Pages were created to give the user more information on the error a
 
 ### Explore Recipes
 
-![header](docs/readme_images/features/b_page.png)
+![header](docs/readme_images/features/explorerecipe.png)
 
 - This page displays all recipes with a status of published with the most recent recipes displayed first.
 - The recipe cards are paginated after every 8 recipes. 
@@ -811,7 +811,7 @@ Custom Error Pages were created to give the user more information on the error a
 ### Recipe Detail Page
 **Recipe Header Section**
 
-![header](docs/readme_images/features/recipe_header.png)
+![header](docs/readme_images/features/recipedet.png)
 
 The recipe header section at the top of the page shows the recipe image, title, author, prep time and cook time.
 
@@ -819,21 +819,21 @@ The recipe header section at the top of the page shows the recipe image, title, 
 
 The following buttons will display if the user is logged in:
 
-![header](docs/readme_images/features/buttons_not_author.png)
+![header](docs/readme_images/features/addmealicon.png)
 
 - Add to Meal Plan Button - Clicking on the button opens the Meal Plan Modal (see below).
 - Bookmark button - Clicking the outlined bookmark button renders the recipe 'bookmarked' by the user which will then fill the bookmark icon and add the recipe to the user's bookmarks page. Clicking the button again will remove the recipe from the user's bookmarks and turn the icon back to an outline.
 
 The following buttons will display if the user is logged in and is the recipe author:
 
-![header](docs/readme_images/features/action_buttons.png)
+![header](docs/readme_images/features/mealplanicon.png)
 
 - Update Recipe Button - Clicking the button opens the update recipe form prepopulated with the current recipe details.
 - Delete Recipe Button - Clicking the button opens the confirm delete recipe page. 
 
 **Meal Plan Modal**
 
-![header](docs/readme_images/features/mealplan_modal.png)
+![header](docs/readme_images/features/mealday.png)
 
 - The meal plan modal includes a form which allows the user to select a day of the week.
 - Once the user clicks the add to meal plan button, the recipe is added to the user's meal plan for the selected day.
@@ -842,7 +842,7 @@ The following buttons will display if the user is logged in and is the recipe au
 
 **Recipe Details Section**
 
-![header](docs/readme_images/features/recipe_details.png)
+![header](docs/readme_images/features/recipedes.png)
 
 - The main body of the page consists of the recipe description, ingredients, and method. 
 
@@ -850,14 +850,14 @@ The following buttons will display if the user is logged in and is the recipe au
 
 ![header](docs/readme_images/features/comment.png)
 
-![header](docs/readme_images/features/add_comment.png)
+![header](docs/readme_images/features/updatecomm.png)
 
 - The comments section lists all comments left by users for that particular recipe.
 - Comments can only be left if a user is logged in. Any comments left by the user that is currently signed in can be updated or deleted using the buttons in the comment header. 
     
-![header](docs/readme_images/features/edit_comment.png)
+![header](docs/readme_images/features/editcomment.png)
 
-![header](docs/readme_images/features/delete_comment.png)
+![header](docs/readme_images/features/delcom.png)
 
 - The user receives a success message notifying them that the comment has been successfully added, updated or deleted.
 - If a user tries to edit or delete a comment (by changing the url) without being signed in they are redirected to the log in page.
@@ -887,7 +887,7 @@ The following buttons will display if the user is logged in and is the recipe au
 
 ### Delete Recipe
 
- ![header](docs/readme_images/features/delete_recipe.png)
+ ![header](docs/readme_images/features/delrec.png)
 
 - If the user is logged in and is the author or the recipe they can choose to delete the recipe by clicking the delete button on the recipe detail page.  
 - The user is asked to confirm if they wish to delete the recipe or cancel.
@@ -895,7 +895,7 @@ The following buttons will display if the user is logged in and is the recipe au
 
 ### My Meal Plan
 
-![header](docs/readme_images/features/mealplan_page.png)
+![header](docs/readme_images/features/)
 
 - This page displays the logged in user's meal plan for the week.
 - The meal plan cards are ordered Monday to Sunday. 
@@ -905,7 +905,7 @@ The following buttons will display if the user is logged in and is the recipe au
 
 ### My Recipes Page
 
-![header](docs/readme_images/features/myrecipes_page.png)
+![header](docs/readme_images/features/myrecipe.png)
 
 - This page displays all recipes which the logged in user has created.
 - The recipe cards are paginated after every 8 recipes. 
@@ -914,9 +914,17 @@ The following buttons will display if the user is logged in and is the recipe au
 - Clicking anywhere inside the recipes card will take you directly to that recipe's detailed page.
 - If a user tries to access this page (by changing the url) without being signed in they are redirected to the log in page.
 
+### My Likes Page
+
+![header](docs/readme_images/features/mylikes.png)
+
+- This page displays all recipes which the logged in user has added to their likes.
+- Clicking anywhere inside the recipes card will take you directly to that recipe's detailed page.
+- If a user tries to access this page (by changing the url) without being signed in they are redirected to the log in page.
+
 ### My Bookmarks Page
 
-![header](docs/readme_images/features/my_bookmarks.png)
+![header](docs/readme_images/features/mybookmarks.png)
 
 - This page displays all recipes which the logged in user has added to their bookmarks.
 - Clicking anywhere inside the recipes card will take you directly to that recipe's detailed page.
