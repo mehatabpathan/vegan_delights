@@ -934,7 +934,7 @@ The following buttons will display if the user is logged in and is the recipe au
 
 Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
 
-![header](docs/readme_images/features/403_error.png)
+![header](docs/readme_images/features/404page.png)
 
 - 400 Bad Request - The Easy Eater is unable to handle this request.
 - 403 Page Forbidden - Looks like you're trying to access forbidden content. Please log out and sign in to the correct account.
