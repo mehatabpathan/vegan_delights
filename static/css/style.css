@@ -6,12 +6,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    /* background-color: #fff; */
-    /* background: linear-gradient(to top, rgb(75, 187, 75), rgb(54, 188, 188)); */
-    /* background-color: #dbf26e; */
-    /* background-image: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%); */
-    background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
-
+    background-color: #fff;
+    background: radial-gradient(circle at 10% 20%, rgb(161, 255, 206) 0%, rgb(250, 255, 209) 90%);
 }
 
 /* body {
@@ -54,9 +50,13 @@ body {
     color: #212018;
 }
 
+.nav-link-active {
+    background-color: #38d6bc; /* Change this to your desired background color */
+    color: #fff; /* Change this to your desired text color */
+}
+
 .logo-image {
     height: 200px;
-    /* border-radius: 80% 15% 55% 50% / 55% 15% 80% 50%; */
 }
 
 .profile-icon {
@@ -300,7 +300,7 @@ body {
     }
   
     .logo-image {
-        height: 75px;
+        height: 125px;
     }
 }
 

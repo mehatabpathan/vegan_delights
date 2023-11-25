@@ -9,39 +9,31 @@
 <section>
     <div class="container px-2 py-3">
         <div class="row flex-md-row-reverse py-3 m-0">
-            {% comment %} <div class="col-md-7 col-lg-5 p-0 pl-md-5 align-self-center">
-                <img src="https://res.cloudinary.com/mehatab/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1699225210/bgimage_thdxgu.jpg"
-                    class="img-fluid family-image" alt="family_dinner">
-            </div> {% endcomment %}
             {% if user.is_authenticated %}
-            {% comment %} <div class="col-md-5 col-lg-7 hero-text-outer text-center">
-                <h1 class="mt-4 mb-2 hero-text">Welcome back to Vegan Delights</h1>
-                <div class="lead mt-4">
-                    Add a new recipe
-                    <a class="btn btn-outline-dark rounded-pill btn-lg ml-2 my-2 my-lg-0" href="{% url 'add_recipe' %}">Create</a>
-
-                </div>
-            </div> {% endcomment %}
 
             <div class="col-md-5 col-lg-7 mx-auto">
                 <div class="hero-text-outer text-center">
                     <h1 class="mt-4 mb-2 hero-text">Welcome back to Vegan Delights</h1>
                     <div class="lead mt-4">
                         Add a new recipe ?
-                        <a class="btn btn-outline-dark rounded-pill btn-lg ml-2 my-2 my-lg-0" href="{% url 'add_recipe' %}">Create</a>
+                        <a class="btn btn-outline-dark rounded-pill btn-lg ml-2 my-2 my-lg-0"
+                            href="{% url 'add_recipe' %}">Create</a>
                     </div>
                 </div>
             </div>
-            
-            
-            
-            {% else %}
-            <div class="col-md-5 col-lg-7 hero-text-outer text-center">
-                <h1 class="mt-4 mb-2 hero-text">Take the stress out of everyday cooking!</h1>
-                <div class="lead mt-4">
-                    Get started today 
-                    <a class="btn btn-outline-dark rounded-pill btn-lg ml-2 my-2 my-lg-0" href="{% url 'account_signup' %}">Sign Up</a>
 
+
+
+            {% else %}
+            <div class="col-md-5 col-lg-7  mx-auto">
+                <div class=" hero-text-outer text-center">
+                    <h1 class="mt-4 mb-2 hero-text">Take the stress out of everyday cooking!</h1>
+                    <div class="lead mt-4">
+                        Get started today
+                        <a class="btn btn-outline-dark rounded-pill btn-lg ml-2 my-2 my-lg-0"
+                            href="{% url 'account_signup' %}">Sign Up</a>
+
+                    </div>
                 </div>
             </div>
             {% endif %}
@@ -50,7 +42,7 @@
 </section>
 
 <!-- Features section -->
-<section class="container px-0" >
+<section class="container px-0">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -85,7 +77,8 @@
                 </div>
                 <h3 class="feature-title">Upload or Like</h3>
                 <p class="feature-text">
-                    Share your recipes easily or appreciate others' creations by liking and sharing within our community.
+                    Share your recipes easily or appreciate others' creations by liking and sharing within our
+                    community.
                 </p>
             </div>
             <div class="col-12 col-md-4 mb-2">
