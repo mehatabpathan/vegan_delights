@@ -64,34 +64,35 @@
                 <div class="feature-image mb-2">
                     <i class="fas fa-hamburger fa-6x"></i>
                 </div>
-                <div>
-                    <h3 class="feature-title">Explore</h3>
-                    <p class="feature-text">
-                        Find inspiration from global home cooks with diverse vegan recipes.
-                    </p>
-                    <a href="{% url 'browse_recipes' %}" class="btn btn-outline-dark rounded-pill mt-3">Explore</a>
-                </div>
+                <h3 class="feature-title">
+                    <a href="{% url 'browse_recipes' %}" class="feature-link">Explore</a>
+                </h3>
+                <p class="feature-text">
+                    Find inspiration from global home cooks with diverse vegan recipes.
+                </p>
             </div>
             <div class="col-12 col-md-4 mb-2">
                 <div class="feature-image mb-2">
                     <i class="fas fa-utensils fa-6x"></i>
                 </div>
-                <h3 class="feature-title">Upload or Like</h3>
+                <h3 class="feature-title">
+                    <a href="{% url 'account_signup' %}" class="feature-link">Upload or Like</a>
+                </h3>
                 <p class="feature-text">
                     Share your recipes easily or appreciate others' creations by liking and sharing within our
                     community.
                 </p>
-                <a href="{% url 'account_signup' %}" class="btn btn-outline-dark rounded-pill mt-3">Upload or Like</a>
             </div>
             <div class="col-12 col-md-4 mb-2">
                 <div class="feature-image mb-2">
                     <i class="fas fa-calendar-alt fa-6x"></i>
                 </div>
-                <h3 class="feature-title">Mean Plan</h3>
+                <h3 class="feature-title">
+                    <a href="{% url 'account_signup' %}" class="feature-link">Meal Plan</a>
+                </h3>
                 <p class="feature-text">
                     Effortlessly plan your week's meals, saving time and stress with our curated vegan recipes.
                 </p>
-                <a href="{% url 'account_signup' %}" class="btn btn-outline-dark rounded-pill mt-3">Meal Plan</a>
             </div>
         </div>
     </div>
