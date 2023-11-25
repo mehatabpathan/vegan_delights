@@ -736,7 +736,7 @@ Custom Error Pages were created to give the user more information on the error a
 
 ### Header
 
-![header](docs/readme_images/features/nav_loggedout.png)
+![header](docs/readme_images/features/logo.png)
 
 **Logo**
 - A customised logo was created using Hatchful by Shopify which is a free logo generator.
@@ -748,10 +748,10 @@ Custom Error Pages were created to give the user more information on the error a
 - The My Account navigation link is a drop down menu which includes the Sign up and Log in links. 
 - When the user has logged in, the My Account drop down menu changes to display the user's name and a profile icon.
 
-![header](docs/readme_images/features/header.png)
+![header](docs/readme_images/features/navbar.png)
 
 - The options to Sign up or Log in will change to the option to log out once a user has logged in.
-- Once a user has signed in, more options such as 'Add Recipe', 'My Meal Plan', 'My Recipes' and 'My Bookmarks' become available.
+- Once a user has signed in, more options such as 'Add Recipe', 'My Meal Plan', 'My Recipes', 'My Likes' and 'My Bookmarks' become available.
 - The navigation bar is fully responsive, collapsing into a hamburger menu when the screen size becomes too small.
 - Hovering over the links will lighten the font.
 
