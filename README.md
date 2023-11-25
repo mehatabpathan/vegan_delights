@@ -118,16 +118,16 @@ The Montserrat font is the main font used for the body of the website with the P
 
 <details>
 
- <summary>Landing Page</summary>
+ <summary>Home Page</summary>
 
-![Landing Page](docs/wireframes/landing_wireframe.png)
+![Home Page](docs/readme_images/wireframes/Homepagewf.png)
 </details>
 
 <details>
 
-<summary>Browse Recipes</summary>
+<summary>Explore Recipes</summary>
 
-![Browse Recipes](docs/wireframes/browse_wireframe.png)
+![Explore Recipes](docs/readme_images/wireframes/Explorerewf.png)
 </details>
 
 
@@ -135,21 +135,28 @@ The Montserrat font is the main font used for the body of the website with the P
 
 <summary>Add Recipe</summary>
 
-![Add Recipe](docs/wireframes/addrecipe_wireframe.png)
+![Add Recipe](docs/readme_images/wireframes/addrecipewf.png)
 </details>
 
 <details>
 
 <summary>My Recipes</summary>
 
-![My Recipes](docs/wireframes/myrecipes_wireframe.png)
+![My Recipes](docs/readme_images/wireframes/myrecipeswf.png)
+</details>
+
+<details>
+
+<summary>My Likes</summary>
+
+![My Likes](docs/readme_images/wireframes/likepagewf.png)
 </details>
 
 <details>
 
 <summary>My Bookmarks</summary>
 
-![My Bookmarks](docs/wireframes/mybookmarks_wireframe.png)
+![My Bookmarks](docs/readme_images/wireframes/bookmarkswf.png)
 </details>
 
 ## Agile Methodology
