@@ -89,6 +89,9 @@ body {
 
 .feature-image {
     text-align: center;
+    color: #212018;
+}
+.feature-image :hover {
     color: #3cc76f;
 }
 

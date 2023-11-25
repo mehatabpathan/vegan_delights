@@ -501,8 +501,12 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 |-----------------------|---------|---------------------------------|-----------|
 | Hero 'Sign Up' Button | Click   | Open Sign up page               | Pass      |
 | Hero 'Sign Up' Button | Display | Not visible if user in session  | Pass      |
-| Hero 'Create" Button  | Click   | Open Add Recipe page            | Pass      |
-| Hero 'Create" Button  | Display | Only visible if user in session | Pass      |
+| Hero 'Create' Button  | Click   | Open Add Recipe page            | Pass      |
+| Hero 'Create' Button  | Display | Only visible if user in session | Pass      |
+| Hero 'hamburger feature image' Button  | Click | Open recipe page | Pass      |
+| Hero 'utensils feature image' Button  | Click | Open addrecipe page | Pass      |
+| Hero 'calender feature image' Button  | Display | Open mealplan page | Pass      |
+
 
 ### Explore Recipes Page
 | Element     | Action                  | Expected Result                                                                         | Pass/Fail |

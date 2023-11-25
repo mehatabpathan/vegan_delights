@@ -61,35 +61,37 @@
     <div class="container-fluid feature-image-outer">
         <div class="row">
             <div class="col-12 col-md-4 mb-2">
+                <a href="{% url 'browse_recipes' %}" class="feature-link">
                 <div class="feature-image mb-2">
                     <i class="fas fa-hamburger fa-6x"></i>
                 </div>
-                <h3 class="feature-title">
-                    <a href="{% url 'browse_recipes' %}" class="feature-link">Explore</a>
-                </h3>
+            </a>
+                <h3 class="feature-title">Explore</h3>
+            
                 <p class="feature-text">
                     Find inspiration from global home cooks with diverse vegan recipes.
                 </p>
+            
             </div>
             <div class="col-12 col-md-4 mb-2">
+                <a href="{% url 'add_recipe' %}" class="feature-link">
                 <div class="feature-image mb-2">
                     <i class="fas fa-utensils fa-6x"></i>
                 </div>
-                <h3 class="feature-title">
-                    <a href="{% url 'account_signup' %}" class="feature-link">Upload or Like</a>
-                </h3>
+            </a>
+                <h3 class="feature-title">Upload or Like</h3>
                 <p class="feature-text">
                     Share your recipes easily or appreciate others' creations by liking and sharing within our
                     community.
                 </p>
             </div>
             <div class="col-12 col-md-4 mb-2">
+                <a href="{% url 'my_mealplan' %}" class="feature-link">
                 <div class="feature-image mb-2">
                     <i class="fas fa-calendar-alt fa-6x"></i>
                 </div>
-                <h3 class="feature-title">
-                    <a href="{% url 'account_signup' %}" class="feature-link">Meal Plan</a>
-                </h3>
+            </a>
+                <h3 class="feature-title">Meal Plan</h3>
                 <p class="feature-text">
                     Effortlessly plan your week's meals, saving time and stress with our curated vegan recipes.
                 </p>
