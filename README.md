@@ -865,7 +865,7 @@ The following buttons will display if the user is logged in and is the recipe au
 
 ### Add Recipe Form
 
-![header](docs/readme_images/features/add_recipe.png)
+![header](docs/readme_images/features/addrecipe.png)
 
 - If the user is logged in, then they can add a recipe by clicking the link on the navigation bar.
 - The form fields for 'Ingredients' and 'Method' include a WYSIWYG editor called Summernote to help the user format their content by adding bullet points, headings etc.
@@ -877,7 +877,7 @@ The following buttons will display if the user is logged in and is the recipe au
 
 ### Update Recipe Form
 
-![header](docs/readme_images/features/update_recipe.png)
+![header](docs/readme_images/features/updaterec.png)
 
 - If the user is logged in and is the author or the recipe they can choose to edit the recipe by clicking the edit button on the recipe detail page. 
 - The form opens with all fields populated with the original content.
@@ -895,7 +895,7 @@ The following buttons will display if the user is logged in and is the recipe au
 
 ### My Meal Plan
 
-![header](docs/readme_images/features/)
+![header](docs/readme_images/features/mymealplan.png)
 
 - This page displays the logged in user's meal plan for the week.
 - The meal plan cards are ordered Monday to Sunday. 
