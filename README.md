@@ -11,7 +11,7 @@ The site acts as a repository for recipes whereby users can store their own reci
 ![Static Badge](https://img.shields.io/badge/Contributors-1-blue)
 ![Static Badge](https://img.shields.io/badge/Languages-4-greens)
 
-![Colour Palette]()
+![Am I Responsive](docs/readme_images/amiresponsive.png)
 ## Table of Contents
 
 - [Vegan Delights](#vegan-delights)
