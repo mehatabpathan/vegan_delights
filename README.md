@@ -7,6 +7,10 @@ The site acts as a repository for recipes whereby users can store their own reci
 - The live link can be found here - [Vegan Delights](https://vegan-delights-d7e8edb51d3f.herokuapp.com/)
 - The GitHub link can be found here - [Vegan Delights](https://github.com/mehatabpathan/vegan_delights.git)
 
+![Static Badge](https://img.shields.io/badge/Last_Commit-November-red)
+![Static Badge](https://img.shields.io/badge/Contributors-1-blue)
+![Static Badge](https://img.shields.io/badge/Languages-4-greens)
+
 ![Colour Palette]()
 ## Table of Contents
 
