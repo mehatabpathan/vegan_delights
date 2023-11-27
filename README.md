@@ -594,6 +594,7 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | Add to Meal Plan submit button | Click               | If meal plan item already exists for that day, the success message tells the user that meal plan has been updated       | Pass      |
 | Add to Meal Plan submit button | Click               | Modal closes                                                                                                            | Pass      |
 | Meal Plan modal                | Click outside modal | Close modal                                                                   | Pass      |
+| Meal Plan delete button                | Click        |meal plan deleted from the page                                                                   | Pass      |
 
 ### Add Recipe Page
 | Element                       | Action                | Expected Result                                                                                                     | Pass/Fail |
