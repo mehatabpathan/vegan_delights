@@ -534,6 +534,15 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | Recipe Content                 | Display             | Display correct recipe image, title, author, prep time, cook time, description, ingredients and method                  | Pass      |
 | Add to Meal Plan button        | Click               | Meal Plan modal pops up                                                                                                 | Pass      |
 | Add to Meal Plan button        | Display             | Button only visible if user in session                                                                                  | Pass      |
+| Like button (Outline)      | Click               | Clicking the outlined Like changes it to a solid Like                                                           | Pass      |
+| Like button (Outline)      | Click               | Recipe is added to the user's Like page                                                                            | Pass      |
+| Like button (Outline)      | Click               | Success message appears informing the user that the recipe has been added to their like                            | Pass      |
+| Like button (Outline)      | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
+| Like button (Solid)        | Click               | Clicking the solid like changes it back to an outlined like                                                     | Pass      |
+| Like button (Solid)        | Click               | Recipe is removed from the user's like page                                                                        | Pass      |
+| Like button (Solid)        | Click               | Success message appears informing the user that the recipe has been removed from bookmarks                              | Pass      |
+| Like button (Solid)        | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
+| Like button                | Display             | Button only visible if user in session                                                                                  | Pass      |
 | Bookmark button (Outline)      | Click               | Clicking the outlined bookmark changes it to a solid bookmark                                                           | Pass      |
 | Bookmark button (Outline)      | Click               | Recipe is added to the user's bookmarks page                                                                            | Pass      |
 | Bookmark button (Outline)      | Click               | Success message appears informing the user that the recipe has been added to their bookmarks                            | Pass      |
@@ -541,7 +550,6 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | Bookmark button (Solid)        | Click               | Clicking the solid bookmark changes it back to an outlined bookmark                                                     | Pass      |
 | Bookmark button (Solid)        | Click               | Recipe is removed from the user's bookmarks page                                                                        | Pass      |
 | Bookmark button (Solid)        | Click               | Success message appears informing the user that the recipe has been removed from bookmarks                              | Pass      |
-| Like button (Solid)        | Click               | Success message appears informing the user that the recipe has been removed from Likes                              | Pass      |
 | Bookmark button (Solid)        | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
 | Bookmark button                | Display             | Button only visible if user in session                                                                                  | Pass      |
 | Update recipe button           | Click               | Opens Update Recipe Form                                                                                                | Pass      |
