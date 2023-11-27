@@ -105,7 +105,7 @@ The site has a very simple and clean design which was purposely chosen in order 
 #### Colour Scheme
 Colour palette from Coolors
 
-![Colour Palette](docs/readme_images/color_scheme.png)
+![Colour Palette](docs/readme_images/colorscheme.png)
 
 Throughout the development process, the color scheme underwent several revisions. Ultimately, I opted to adopt a neutral color palette to ensure that the website's purpose remained front and center, without unnecessary distractions. Given that the primary focus of the website is to experiment with and exchange recipes, a white background complemented by subtle light-colored accents felt most appropriate.
 
