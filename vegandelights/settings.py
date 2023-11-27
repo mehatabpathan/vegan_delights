@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['vegan-delights-d7e8edb51d3f.herokuapp.com', '127.0.0.1']
 
@@ -85,7 +85,7 @@ MIDDLEWARE = [
     'allauth.account.middleware.AccountMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'vegandelights.urls'
@@ -120,6 +120,7 @@ WSGI_APPLICATION = 'vegandelights.wsgi.application'
 # }
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+   
 }
 
 
