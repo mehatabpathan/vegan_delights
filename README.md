@@ -540,7 +540,7 @@ The drop of the [accessibility](<https://cdn.discordapp.com/attachments/10490249
 | Like button (Outline)      | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
 | Like button (Solid)        | Click               | Clicking the solid like changes it back to an outlined like                                                     | Pass      |
 | Like button (Solid)        | Click               | Recipe is removed from the user's like page                                                                        | Pass      |
-| Like button (Solid)        | Click               | Success message appears informing the user that the recipe has been removed from bookmarks                              | Pass      |
+| Like button (Solid)        | Click               | Success message appears informing the user that the recipe has been removed from likes                              | Pass      |
 | Like button (Solid)        | Click               | Success message fades after 3 seconds                                                                                   | Pass      |
 | Like button                | Display             | Button only visible if user in session                                                                                  | Pass      |
 | Bookmark button (Outline)      | Click               | Clicking the outlined bookmark changes it to a solid bookmark                                                           | Pass      |
